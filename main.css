@@ -136,7 +136,7 @@ a:active{
 	padding: 10px;
 	border-radius: 5px;
 }
-.photos span{
+.photos .headings{
 	border: 2px solid black;
 	color: white;
 	font-size: 1.5em;
@@ -146,14 +146,14 @@ a:active{
 	border-radius: 5px;
 }
 .images{
-	background-image: url(images/gallery.jpg);
+	background-color:  #ffff80;
 	background-repeat: none;
 	background-size: cover;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 10px;
-	margin: 20px;
-	display: inline-block;
+	border: 10px solid  #ffff80;
+	border-radius: 10px;
+	padding: 1%;
+	margin: 2%;
+	display: block;
 }
 .images a{
 	text-decoration: none;
@@ -167,9 +167,9 @@ a:active{
 }
 .images img{
 	border-radius: 6px;
-	width: 25%;
-	height: 25%;
-	margin: 10px;
+	width: 47%;
+	height: 35%;
+	margin: 0% 1%;
 }
 .message span{
 	border: 2px solid black;

@@ -35,14 +35,15 @@ form select{
 }
 form input[type="submit"]{
 	padding: 10px;
-	width: 80%;
+	width: 60%;
 	height: 10%;
+	font-size: 1em;
 	background-color: #24f1b4;
 	border: 2px solid white;
 	border-radius: 6px;
 }
 .cat-img img{
-	border: 30px solid grey;	
+	border: 30px solid  #66ffff;	
 	border-radius:10px;
 	width: 50%;
 	height: 50%;
