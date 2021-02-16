@@ -31,11 +31,8 @@
 		</div>
 	</header>
 	<div class="intro" >
-		<p class="i-name">Chaitanya Khiratkar</br></p>
-		<p class="i-clg">	
-			Third Year Chemical Engineering<br>
-			IIT KHARAGPUR <br>
-		</p>
+		<p class="i-name" id="i-name"></br></p>
+		<p class="i-clg" id="i-clg"></p>
 		<span class="line"></span>
 	</div>
 	<div class="profile" id="p">
@@ -137,21 +134,21 @@
 		</div>
 </div>
 <div class="gallery" id="g" >
-	<h1 style="font-size: 3em; padding-bottom: 3%;">Gallery</h1>
+	<h1 style="font-size: 4em; padding-bottom: 3%;">Gallery</h1>
 	<span class="l-b">
-		<img alt="right" onclick="" src="images/lside.jpg">
+		<a onclick="sliding(1);"><img alt="right" onclick="" src="images/lside.jpg"></a>
 	</span>
-	<span class="imgs" id="images">
-		<img alt="image" src="images/pic0.jpg" >
+	<span class="imgs" >
+		<img alt="image" src="images/pic0.jpeg" id="images" >
 	</span>
 	<span class="r-b">
-		<img alt="left" onclick="" src="images/rside.jpg">
+		<a onclick="sliding(0);"><img alt="right" onclick="" src="images/rside.jpg"></a>
 	</span>
 </div>
 <div class="contact" id="c">
 	<div class="h1c"> <h1 style="font-size: 3em; padding-bottom: 3%;">Contact</h1></div>
 	<div class="message">
-		<form action="#" method="post">
+		<form action="#" method="post" onsubmit="alert("Your Message has been send");">
 			<label>E-mail :</label><br>
 			<input type="mail" name="mail"><br>
 			<label>Message :</label><br>
@@ -185,10 +182,9 @@
 			<ul>
 				<li><a href="JSClock.html">JS-Clock</a></li>
 			</ul>
-			
 		</div>
-		
 	</div>
 </div>
+<script type="text/javascript" src="profileJS.js"></script>
 </body>
 </html>
