@@ -1,0 +1,302 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html{
+	overflow-x: hidden;
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+header{
+	position: fixed;
+	width: 100%;
+	background-color: #666666;
+}
+.p-nav{
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+.p-nav .p-nav-list li{
+	text-shadow: 1px 1px grey;
+	display: inline;
+	line-height: 38px;
+	padding: 20px 15px;
+	font-size: 1.3em;
+
+}
+.p-nav .p-nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+.p-nav .p-nav-list li a:hover{
+	color:  #ff5050;
+}
+.p-nav .p-nav-list li a:active{
+	color:  #cc4400;
+}
+.intro{
+	width: 100%;
+	padding-top: 300px;
+	clear: both;
+	text-align: center;
+	background-image: url(images/tb.jpg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	min-height: 500px;
+}
+.intro .i-name{
+	font-size: 6em;
+	color: white;
+	font-weight: bold;
+}
+.intro .i-clg{
+	color: white;
+	font-size: 1.5em;
+}
+.line {
+	display: inline-block;
+	content: " ";
+	background-color: white;
+	height: .05em;
+	width: 30%;
+}
+.profile{
+	width: 100%;
+	background-color:  #001a09;
+	min-height: 750px;
+}
+.profile .ppic{
+	float: left;
+	padding: 0px; 
+	margin-top: 10%;
+	margin-left: 5%;
+	width: 28%;
+
+}
+.profile .ppic img{
+	width: 100%;
+	min-height: auto;
+	border-radius: 70%;
+}
+.profile .speech{
+	float: right;
+	padding-top: 10%;
+	padding-right: 15%;
+	width: 50%;
+	color: grey;
+	font-size: 1.5em;
+	text-align: center;
+}
+.skill{
+	text-align: center;
+	clear: both;
+	width: 100%;
+	padding: 0px 5%;
+	padding-top: 5%;
+	color: white;
+	font-size: 2em;
+}
+.academic{
+	padding-top: 5%;
+	width: 100%;
+	background-color: grey;
+	min-height: 750px;
+	text-align: center;
+	color:  #cc4400;
+}
+.edu{
+	margin: 5px 5px;
+	text-align : center;
+	font-size: 1.2em;
+}
+.edu img{
+	width: 4%;
+	min-height: 4%;
+	border-radius: 50%;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+
+}
+.edu .Year{
+	width: 20%;
+	vertical-align: middle;
+	color: white;
+}
+.edu .s-name{
+	vertical-align: middle;
+	color: white;
+	padding:0px 25px;
+}
+.edu span h2{
+	font-size: 1.5em;
+	padding-bottom: 3px;
+	color:  #ff9933;
+}
+.edu span hr{
+	width :20%;
+}
+.activities{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 100%;
+	background-color: black;
+	min-height: 750px;
+	text-align: center;
+	color:  #cc4400;
+}
+.por{
+	margin: 5px 5px;
+	text-align : center;
+	margin-bottom: 5%;
+	font-size: 1.2em;
+}
+
+.por .Year{
+	color: white;
+}
+.por .t-name{
+	color: white;
+}
+.por span h2{
+	font-size: 1.5em;
+	padding-bottom: 3px;
+	color:  #ff9933;
+}
+.t-name ul{
+	padding: 0% 15%;
+	padding-top: 1%;
+	width: 70%;
+	font-size: .85em;
+}
+
+.gallery {
+	background-color: #99ccff;
+	width: 100%;
+	text-align: center;
+	min-height: auto;
+	display: inline-block;
+	padding-top: 5%;
+	padding-bottom: 10%;
+	color: #cc4400;
+	
+}
+.l-b,.r-b{
+	width: 20%;
+	display: inline;
+	line-height: 250px;
+}
+.l-b img,.r-b img{
+	width:5%;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 33.33%;
+ 	padding: 5px;
+}
+.imgs{
+	width:70%;
+	height: auto;
+}
+.imgs img{
+	width :50%;
+	height: auto;
+	border-radius: 10px;
+	border: 5px solid #cce6ff;
+	vertical-align: middle;
+}
+.contact{
+	text-align: center;
+	width: 100%;
+	min-height: 400px;
+	background-color:  #666666;
+	color: #cc4400;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	clear: both;
+} 
+
+.message {
+	float: left;
+	font-size: 1em;
+	color: black;
+	width: 50%;
+	padding-left: 2%;
+	text-align: left;
+}
+
+form label{
+	font-weight: bold;
+	color: white;
+	padding: 20px 10px;
+}
+input[type="mail"]{
+	font-size: 1.3em;
+	padding: 10px;
+	border: 0.5px solid black;
+	width: 80%;
+	height: 15px;
+	border-radius: 5px;
+}
+textarea[type="message"]{
+	font-size: 1.2em;
+	padding: 10px;
+	border: 0.5px solid black;
+	width: 80%;
+	height: 90px;
+	border-radius: 5px;
+}
+input[type="submit"]{
+	margin-right: 20%;
+	float: right;
+	margin-top: 10px;
+	padding: 5px 15px ;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+.social{
+	float: right;
+	width: 40%;
+}
+.social img{
+	padding: 5%;
+	width :10%;
+	height: 10%;
+}
+
+
+
+
+
+
+
+
+
+.t-foot{
+	clear: both;
+	padding-top: 10%;
+}
+.t-foot .thank{
+	text-align: right;
+	margin:20px;
+	margin-bottom: 0px;
+	color: white;
+}
+.otherwebsites{
+	clear :both;
+	margin: 20px;
+	float: right;
+	color: white;
+}
+.otherwebsites a{
+	color:white;
+}
+.otherwebsites a:hover{
+	color: red;
+} 
+

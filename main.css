@@ -21,8 +21,10 @@ hr{
 	height:.1em;
 }
 .t-header{
+	position: fixed;
 	background-color: white;
 	border: 2px solid white;
+	width: 100%;
 }
 .t-header::after{
 	content: " ";
@@ -80,7 +82,7 @@ a:active{
 }
 .profile div{
 	width: 30%;
-	height: 10%;
+	height: 1000%;
 	display: inline-block;
 	float: left;
 	margin: 20px 10px;
@@ -103,7 +105,7 @@ a:active{
 	color: white;
 	font-size: 2em;s
 }
-.academics span {
+.headings {
 	border: 2px solid black;
 	color: white;
 	font-size: 1.5em;
@@ -136,15 +138,6 @@ a:active{
 	padding: 10px;
 	border-radius: 5px;
 }
-.photos .headings{
-	border: 2px solid black;
-	color: white;
-	font-size: 1.5em;
-	background-color: #00a8f3;
-	margin: 20px;
-	padding: 5px;
-	border-radius: 5px;
-}
 .images{
 	background-color:  #ffff80;
 	background-repeat: none;
@@ -170,15 +163,6 @@ a:active{
 	width: 47%;
 	height: 35%;
 	margin: 0% 1%;
-}
-.message span{
-	border: 2px solid black;
-	color: white;
-	font-size: 1.5em;
-	background-color: #00a8f3;
-	margin: 20px;
-	padding: 5px;
-	border-radius: 5px;
 }
 .message div{
 	font-size: 1em;

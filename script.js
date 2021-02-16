@@ -7,4 +7,7 @@ function sliding(argument) {
 	img1.src="images/pics"+ (i%2) +".jpeg";
 	i++;
 }
+function Checking() {
+	var nav=document.getElementById("nav-p");
+}
 setInterval(function(){ sliding();},1500);

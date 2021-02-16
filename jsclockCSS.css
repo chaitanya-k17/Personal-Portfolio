@@ -45,8 +45,8 @@ form input[type="submit"]{
 .cat-img img{
 	border: 30px solid  #66ffff;	
 	border-radius:10px;
-	width: 50%;
-	height: 50%;
+	width: 40%;
+	height: 30%;
 	margin-top: 30px ;
 	margin-bottom: 20px
 }
