@@ -2,18 +2,23 @@
 	margin: 0px;
 	padding: 0px;
 }
-html{
+#page{
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 body{
 	width: 100%;
+	min-height:auto; 
 	overflow-x: hidden;
 	overflow-y: hidden;
+
 }
 header{
 	position: fixed;
 	width: 100%;
 	background-color: #666666;
+	visibility: hidden;
+	opacity: 10;
 }
 .p-nav{
 	text-align: center;
@@ -44,9 +49,10 @@ header{
 	clear: both;
 	text-align: center;
 	background-image: url(images/tb.jpg);
-	background-size: auto;
+	background-size: inherit;
 	background-repeat: no-repeat;
-	min-height: 500px;
+	background-attachment: fixed;
+	min-height: 1200px;
 }
 .intro .i-name{
 	font-size: 6em;
@@ -63,6 +69,23 @@ header{
 	background-color: white;
 	height: .05em;
 	width: 30%;
+}
+#dd-img{
+	margin-top: 10%;
+	padding: .5em;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	opacity: 3;
+}
+#dd-img:hover{
+	border: 1px solid white;
+	width: 3.3em;
+	height: 3.3em;
+	transition: 0.5s;
+}
+#main-page{
+	visibility: hidden;
 }
 .profile{
 	width: 100%;
@@ -149,13 +172,17 @@ header{
 	text-align: center;
 	color:  #cc4400;
 }
+.activities div:hover,.academic div:hover{
+	text-align: center;
+	font-size: 1.3em;
+}
+
 .por{
 	margin: 5px 5px;
 	text-align : center;
 	margin-bottom: 5%;
 	font-size: 1.2em;
 }
-
 .por .Year{
 	color: white;
 }
@@ -194,19 +221,19 @@ header{
 	width:5%;
 	margin-left: auto;
 	margin-right: auto;
-	flex: 33.33%;
  	padding: 5px;
 }
 .imgs{
-	width:70%;
-	height: auto;
+	width:30%;
 }
 .imgs img{
-	width :50%;
-	height: auto;
+	width :30%;
 	border-radius: 10px;
 	border: 5px solid #cce6ff;
 	vertical-align: middle;
+}
+.imgs img:hover{
+	width: 40%;
 }
 .contact{
 	text-align: center;
@@ -267,6 +294,11 @@ input[type="submit"]{
 	padding: 5%;
 	width :10%;
 	height: 10%;
+}
+.social img:hover{
+	padding: 5%;
+	width :12%;
+	height: 12%;
 }
 
 
