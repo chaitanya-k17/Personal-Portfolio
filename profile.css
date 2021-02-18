@@ -4,6 +4,7 @@
 }
 #page{
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 body{
 	width: 100%;
@@ -11,6 +12,7 @@ body{
 	overflow-x: hidden;
 	background-color: black;
 }
+
 header{
 	position: fixed;
 	width: 100%;
@@ -65,7 +67,7 @@ header{
 	height: .05em;
 	width: 30%;
 }
-#dd-img{
+#dd-img,#du-img{
 	margin: 5%; 
 	margin-bottom: 15%;
 	padding: .5em;
@@ -74,7 +76,11 @@ header{
 	border-radius: 50%;
 	opacity: 3;
 }
-#dd-img:hover{
+#du-img{
+	margin: 2%;
+	padding: 0;
+}
+#dd-img:hover,#du-img:hover{
 	border: 1px solid white;
 	width: 3.3em;
 	height: 3.3em;
@@ -86,7 +92,8 @@ header{
 .profile{
 	width: 100%;
 	background-color:  #001a09;
-	min-height: 750px;
+	min-height: 700px;
+	text-align: center;
 }
 .profile .ppic{
 	float: left;
@@ -120,12 +127,12 @@ header{
 	font-size: 2em;
 }
 .academic{
-	padding-top: 5%;
 	width: 100%;
 	background-color: grey;
-	min-height: 750px;
+	min-height: 700px;
 	text-align: center;
 	color:  #cc4400;
+	padding-bottom: 5%;
 }
 .edu{
 	margin: 5px 5px;
@@ -160,7 +167,6 @@ header{
 	width :20%;
 }
 .activities{
-	padding-top: 5%;
 	padding-bottom: 5%;
 	width: 100%;
 	background-color: black;
@@ -201,9 +207,7 @@ header{
 	background-color: #11ABB0;
 	width: 100%;
 	text-align: center;
-	height: 400px;
-	display: inline-block;
-	padding-top: 5%;
+	height: 700px;
 	padding-bottom: 10%;
 	color: #cc4400;
 	
@@ -229,18 +233,12 @@ header{
 	border: 5px solid #cce6ff;
 	vertical-align: middle;
 }
-.imgs img:hover{
-	margin:  3%;
-}
 .contact{
 	text-align: center;
 	width: 100%;
-	min-height: 400px;
 	background-color:  #666666;
 	color: #cc4400;
-	padding-top: 10%;
-	padding-bottom: 10%;
-	clear: both;
+	height: 700px;
 } 
 
 .message {
@@ -261,7 +259,7 @@ input[type="mail"]{
 	font-size: 1.3em;
 	padding: 10px;
 	border: 0.5px solid black;
-	width: 80%;
+	width: 70%;
 	height: 15px;
 	border-radius: 5px;
 }
@@ -269,12 +267,12 @@ textarea[type="message"]{
 	font-size: 1.2em;
 	padding: 10px;
 	border: 0.5px solid black;
-	width: 80%;
+	width: 70%;
 	height: 90px;
 	border-radius: 5px;
 }
 input[type="submit"]{
-	margin-right: 20%;
+	margin-right: 30%;
 	float: right;
 	margin-top: 10px;
 	padding: 5px 15px ;
@@ -297,22 +295,13 @@ input[type="submit"]{
 	width :12%;
 	height: 12%;
 }
-
-
 .t-foot{
 	clear: both;
-	padding-top: 10%;
-}
-.t-foot .thank{
-	text-align: right;
-	margin:20px;
-	margin-bottom: 0px;
 	color: white;
+	text-align: center;
 }
 .otherwebsites{
-	clear :both;
 	margin: 20px;
-	float: right;
 	color: white;
 }
 .otherwebsites a{
@@ -322,3 +311,6 @@ input[type="submit"]{
 	color: red;
 } 
 
+.profile,.academic,.activities,.gallery,.contact{
+	padding-top: 5%;
+}
