@@ -38,29 +38,6 @@ function sliding(x) {
 	
 }
 
-var dropdown=false;
-
-function loading() {
-	console.log("00099999888888");
-	if(!dropdown){
-		document.getElementById("main-page").setAttribute("style","visibility: visible;");
-		document.getElementById("page").setAttribute("style","overflow-y:scroll;");
-		document.getElementById("p-header").setAttribute("style","visibility: visible;");
-		document.getElementById("scroller").setAttribute("href","#p");
-		document.getElementById("i").setAttribute("style","min-height:500px;");
-		document.getElementById("dd-img").setAttribute("src","images/dropup.jpg");
-		dropdown=true;
-	}
-	else{
-		document.getElementById("main-page").setAttribute("style","visiblity:hidden;");
-		document.getElementById("page").setAttribute("style","overflow-y:hidden;");
-		document.getElementById("p-header").setAttribute("style","visibility: hidden;");
-		document.getElementById("scroller").setAttribute("href","#");
-		document.getElementById("i").setAttribute("style","min-height:1200px;");
-		document.getElementById("dd-img").setAttribute("src","images/dropdown.jpg");
-		dropdown=false;
-	}
-}
 
 
 function Checking() {

@@ -4,21 +4,19 @@
 }
 #page{
 	overflow-x: hidden;
-	overflow-y: hidden;
 }
 body{
 	width: 100%;
 	min-height:auto; 
 	overflow-x: hidden;
-	overflow-y: hidden;
-
+	background-color: black;
 }
 header{
 	position: fixed;
 	width: 100%;
 	background-color: #666666;
-	visibility: hidden;
 	opacity: 10;
+	display: none;
 }
 .p-nav{
 	text-align: center;
@@ -45,14 +43,11 @@ header{
 }
 .intro{
 	width: 100%;
-	padding-top: 300px;
+	padding-top: 20%;
 	clear: both;
 	text-align: center;
-	background-image: url(images/tb.jpg);
-	background-size: inherit;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	min-height: 1200px;
+	vertical-align: middle;
+	background-color: black;
 }
 .intro .i-name{
 	font-size: 6em;
@@ -71,7 +66,8 @@ header{
 	width: 30%;
 }
 #dd-img{
-	margin-top: 10%;
+	margin: 5%; 
+	margin-bottom: 15%;
 	padding: .5em;
 	width: 3em;
 	height: 3em;
@@ -85,7 +81,7 @@ header{
 	transition: 0.5s;
 }
 #main-page{
-	visibility: hidden;
+	display: none;
 }
 .profile{
 	width: 100%;
@@ -202,10 +198,10 @@ header{
 }
 
 .gallery {
-	background-color: #99ccff;
+	background-color: #11ABB0;
 	width: 100%;
 	text-align: center;
-	min-height: auto;
+	height: 400px;
 	display: inline-block;
 	padding-top: 5%;
 	padding-bottom: 10%;
@@ -227,13 +223,14 @@ header{
 	width:30%;
 }
 .imgs img{
+	margin: 0%;
 	width :30%;
 	border-radius: 10px;
 	border: 5px solid #cce6ff;
 	vertical-align: middle;
 }
 .imgs img:hover{
-	width: 40%;
+	margin:  3%;
 }
 .contact{
 	text-align: center;
