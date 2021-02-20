@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+body{
+	background-color: black;
+	overflow-x: hidden;
+}
+
+/* Header styling */
+
+header{
+	/*display: none;*/
+	padding-top: 10px;
+	width: 100vw;
+	position: fixed; 
+	background-color: grey;
+}
+.icon-nav{
+	display: none;
+}
+.icon-nav ul{
+	text-align: center;
+}
+.icon-nav ul li{
+	padding: 10px 25px;
+	display: inline-block;
+	text-align: center;
+	font-size: 25px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.button-nav{
+	display: none;
+}
+.button-nav  span span{
+	margin: 5px 10px ;
+	width: 25px;
+	height: 5px;
+	background-color: white;
+	display: block;
+}
+
+/* Intro styling */
+
+.intro{
+	padding-top: 40vh;
+	height: 100vh;
+	text-align: center;
+	width: 100vw;
+	clear: both;
+	text-align: center;
+	background-image: url("../Images/tb.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.intro .i-name{
+	font-size: 10vmin;
+	color: white;
+	font-weight: bold;
+}
+.intro .i-clg{
+	font-size: 3vmin;
+	color: white;
+}
+.line {
+	display: inline-block;
+	content: " ";
+	background-color: white;
+	height: .2vh;
+	width: 30%;
+}
+.arrow-down {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 25px;
+  height: 25px;
+}
+.arrow-down:hover{
+	width: 30px;
+	height: 30px;
+}
+
+/* Profile styling */
+
+.profile{
+	width: 100%;
+	text-align: center;
+	min-height: 100vh;
+	background-color:  #001a00; 
+}
+.profile .ppic{
+	padding-top: 15vh;
+	padding-left: 10vw;
+	float: left;
+	width: 35vw;
+}
+.profile .ppic img{
+	width: 75%;
+	border-radius: 50%;
+}
+.profile .speech{
+	padding-top: 15vh;
+	padding-right: 10vw;
+	float: right;
+	width: 60vw;
+	color: #fff5e6;
+	font-size: 2vmax;
+}
+.profile .speech span{
+	padding-top: 20px;
+	display: block;
+}
+.skills{
+	visibility: hidden;
+	margin-top: 1vh;
+	padding-top: 5vh;
+	clear: both;
+	color: white;
+	font-size: 2vmax;
+	border: 1px solid white;
+}
+
+/* Academic Style */
+
+.academic{
+	padding-top: 10vh;
+	width: 100%;
+	background-color: white;
+	min-height: 100vh;
+	text-align: center;
+}
+.edu{
+	color: grey;
+	font-size: 1.5vmax;
+}
+.edu img{
+	width: 5vmax;
+	height: 5vmax;
+}
+.edu  span h2{
+	color: brown;
+	font-size: 2vmax;
+}
+
+
+.headings{
+	font-size: 5vmin;
+	color:  #ff6600;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .profile .ppic{
+  	padding: 5vh;
+  	width: 100vw;
+  }
+  .profile .ppic img{
+  	width: 50%;
+  }
+  .profile .speech{
+  	padding: 5vh;
+  	width: 100vw;
+  }
+  .headings{
+  	font-size: 5vmax;
+  }
+  .edu  span h2{
+	font-size: 2.5vmax;
+  }
+  .edu {
+    font-size: 2vmax;
+   }
+}

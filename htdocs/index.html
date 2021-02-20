@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="veiwport" content="width=device-width, initial-scale=1.0">
+	<title>Chaitanya Khiratkar</title>
+	<link rel="stylesheet" type="text/css" href="CSS/main.css" >
+	<script src="JS/jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			function Navigation(){
+				if($("header").width()<696)
+				{ 
+					$(".icon-nav").hide();
+					$(".button-nav").show();
+				}
+				else{
+					$(".icon-nav").show();
+					$(".button-nav").hide();
+				}
+			};
+			setInterval(function(){Navigation();},500);
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="icon-nav">
+			<ul>
+				<li><a href="#p">Profile</a></li>
+				<li><a href="#a">Academics</a></li>
+				<li><a href="#">Activities</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="button-nav">
+			<span><span></span><span></span><span></span></span>
+		</div>
+	</header>
+	<div class="intro" id="intro">
+			<p class="i-name" id="i-name"></br></p>
+			<p class="i-clg" id="i-clg"></p>
+			<span class="line"></span><br>
+			<i class="arrow-down"></i>
+	</div>
+	<div class="profile" id="p">
+		<div>
+			<div class="ppic" >
+				<img src="Images/profile.jpeg"  alt="Chaitanya_profile_pic">
+			</div>
+			<article class="speech">
+				<h1>	
+				Hola , I am Chaitanya !<span>
+				 A Third Year Undergraduate student,Chemical Enginnering Department at  Indian Institute of Technology, Kharagpur.</span>
+				</h1>	
+			</article>
+		</div>
+		<div class="skills">
+			<i>Skills</i>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+		<div class="academic" id="a" >
+			<h1 class="headings">Academics</h1><br>
+			<div class="edu"> 
+				<img src="Images/edu.png" alt="education">
+				<span class="Year">
+				<h2>B.Tech</h2>
+				<i>August 2018 - May 2022</i>
+				</span>
+				<span class="s-name">
+				<h2>Indian Institute of Technology, Kharagpur</h2>
+							JEE Advance: 99.6 percentile<br>
+							JEE Mains : 99.9 percentile<br>
+				</span>
+			</div>
+			<div class="edu"> 
+				<img src="Images/edu.png" alt="education">
+				<span class="Year">
+					<h2>HSC-Maharashtra State Board</h2>
+					<i>April 2016 - March 2018</i>
+				</span>	
+				<span class="s-name">
+					<h2>Arts Commerce and Science College,Chandrapur</h2>
+					Scored a 90% in Final HSC Examination held all over Maharashtra <br>
+				</span>
+			</div>
+			<div class="edu"> 
+				<img src="Images/edu.png" alt="education">
+				<span class="Year">
+					<h2>SSC-CBSE</h2>
+					<i>May 2008 - March 2016</i>
+				</span>
+				<span class="s-name">
+					<h2>Macaroon Students' Academy CBSE School, Wani</h2>
+					Scored 10 cgpa in the SSC Exam  held all over india
+					</span>
+				</div>
+			</div>
+	<script type="text/javascript" src="JS/main.js"></script>
+</body>
+</html>
