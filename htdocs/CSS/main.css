@@ -11,18 +11,22 @@ body{
 	background-color: black;
 	overflow-x: hidden;
 }
+.profile,.academic,.activities,.gallery,.contact{
+	display: none;
+}
 
 /* Header styling */
 
 header{
-	/*display: none;*/
-	padding-top: 10px;
+	display: none;
 	width: 100vw;
 	position: fixed; 
-	background-color: grey;
+	background-color: #333;
+	opacity: 100;
 }
 .icon-nav{
-	display: none;
+	height: auto;
+	display: 
 }
 .icon-nav ul{
 	text-align: center;
@@ -79,21 +83,22 @@ a{
 }
 .arrow-down {
   border: solid white;
-  border-width: 0 6px 6px 0;
+  border-width: 0 0.5vmax 0.5vmax 0;
   display: inline-block;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  width: 25px;
-  height: 25px;
+  width: 1.5vmax;
+  height: 1.5vmax;
 }
-.arrow-down:hover{
-	width: 30px;
-	height: 30px;
+.intro .arrow:hover{
+	border: .1vmax solid white;
+	background-color:  #1a0000;
 }
 
 /* Profile styling */
 
 .profile{
+	padding-top: 10vmin;
 	width: 100%;
 	text-align: center;
 	min-height: 100vh;
@@ -141,6 +146,7 @@ a{
 	text-align: center;
 }
 .edu{
+  	padding: 5vmin 5vmin;
 	color: grey;
 	font-size: 1.5vmax;
 }
@@ -158,13 +164,195 @@ a{
 	font-size: 5vmin;
 	color:  #ff6600;
 }
+/* Activities Style */
+
+.activities{
+	padding-top: 10vh;
+	width: 100%;
+	background-color: black;
+	min-height: 100vh;
+	text-align: center;
+}
+.por{
+  	padding: 5vmin 7vmin; 
+	color: white;
+	font-size: 1.3vmax;
+}
+.por  span h2{
+	color:   #ff0000;
+	font-size: 1.6vmax;
+}
+.t-name i{
+	text-decoration: underline;
+	padding-bottom:15px; 
+}
+.por span ul li{
+	line-height: 3vh;
+	font-size: 1.2vmax;
+	list-style-type: none;
+}
+
+/* Galery Styling */
+.gallery{
+	padding: 10vh 5vw;
+	width: 100%;
+	background-color:#00ffcc;
+	min-height: auto;
+	text-align: center;
+
+}
+.imgs{
+	display: inline-block;
+	margin-top: 5vh;
+}
+.imgs img{
+	margin: 0%;
+	width : 32vmax;
+	height: 24vmax;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+#image2,#image0{
+	opacity: .5;
+	width : 16vmax;
+	height: 12vmax;
+	border-radius: 10px;
+}
+
+.arrow-left{
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  width: 25px;
+  height: 25px;
+}
+.arrow-right {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  width: 25px;
+  height: 25px;
+}
 
 
+/* Contact style */
 
+.contact{
+	padding-top: 10vh;
+	text-align: center;
+	width: 100%;
+	background-color:  #666666;
+	min-height: auto;
+} 
 
+.message {
+	padding-top: 5vh;
+	padding-left: 10vw;
+	padding-bottom: 10vh;
+	float: left;
+	width: 35vw;
+	text-align: center;
+	line-height: 3vh;
+}
+form{
+	width: 30vw;
+}
+form label{
+	font-weight: bold;
+	color: white;
+}
+input[type="mail"]{
+	padding: .5em;
+	border-radius: 1vh;
+	height: 5vh;
+	width: 30vw;
 
+}
+textarea[type="message"]{
+	padding: .5em;
+	border-radius: 1vh;
+	height: 15vh;
+	width: 30vw;
+}
+input[type="submit"]{
+	font-weight: 800;
+	width: 10vmax;
+	border-radius: 10%;
+	padding: 5px 15px;
+}
+input[type="submit"]:hover{
+	width: 11vmax;
 
-@media only screen and (max-width: 800px) {
+}
+.social{
+	float: right;
+	padding-top: 5vh;
+	padding-right: 10vw;
+	padding-bottom: 10vh;
+	width: 35vw;
+}
+.social img{
+	padding: 2vmin;
+	width: 11vmin;
+	height: 11vmin;
+}
+.social img:hover{
+	width: 13vmin;
+	height: 13vmin;
+}
+
+.t-foot{
+	font-size: 1.5vmax;
+	padding: 10vh;
+	clear: both;
+	color: white;
+	background-color: #737373;
+	text-align: center;
+}
+.otherwebsites a:hover{
+	color: red;
+}
+.arrow{
+	display: inline-block;
+	width: 5vmax;
+	height: 5vmax;
+	padding:1.6vmax ;
+	text-align: center;
+	border-radius: 50%;
+}
+.otherwebsites .arrow:hover{
+	border: .1vmax solid white;
+	background-color: black;
+}
+.arrow-up{
+  border: solid white;
+  border-width: .5vmax 0 0 .5vmax;
+  display: inline-block;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 1.5vmax;
+  height: 1.5vmax;
+}
+
+/*----------MOBILE VIEW------------*/
+
+@media only screen and (max-width: 700px){
+	.icon-nav{
+		display: none;
+	}
+	.button-nav{
+		display: initial;
+	}
+}
+
+@media  only screen and (max-width: 850px) {
+	.profile .ppic img{
+		width: 30%;
+	}
   .profile .ppic{
   	padding: 5vh;
   	width: 100vw;
@@ -179,10 +367,56 @@ a{
   .headings{
   	font-size: 5vmax;
   }
+  .edu{
+  	padding: 5vmax 5vmax;
+  }
   .edu  span h2{
 	font-size: 2.5vmax;
   }
   .edu {
     font-size: 2vmax;
    }
+   .por{
+   	padding: 5vmax 7vmax;
+	font-size: 1.5vmax;
+	}
+	.por  span h2{
+		font-size: 2vmax;
+	}
+	.por span ul li{
+		font-size: 1.25vmax;
+		line-height: 2vh;
+	}
+	#image0,#image2{
+		display: none;
+	}
+	.contact{
+		text-align: center;
+	}
+	.message{
+		padding-bottom: 0;
+		float: none;
+		width: 100vw;
+		text-align: center;
+		padding-left: 0;
+	}
+	form{
+		width: 100vw;
+		text-align: center;
+	}
+	input[type="mail"]{
+		height: 2.5vh;
+		width: 50vw;
+	}
+	textarea[type="message"]{
+		height: 10vh;
+		width: 50vw;
+	}
+	.social{
+		padding-bottom: 0;
+		float: none;
+		width: 100vw;
+		padding-right: 0;
+	}
 }
+

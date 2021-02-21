@@ -1,6 +1,6 @@
 var name="Chaitanya Khiratkar";
 var cllg="Third Year Chemical Engineering<br>IIT KHARAGPUR <br>";
-var i=0;
+var i=0,j=0;
 
 
 function starting() {
@@ -11,7 +11,6 @@ function starting() {
 	}
 	else if(i==23){
 		document.getElementById("i-clg").innerHTML=cllg;
-		console.log("1");
 		clearInterval(Naming);
 	}
 	else{
@@ -21,4 +20,27 @@ function starting() {
 		n.innerHTML=x+"_";
 	}
 }
+function sliding(x) {
+	if(x==1){
+		j++;
+	}
+	else if(x==0){
+		j--;
+	}
+
+	if(j>3){
+		j=0;
+	}
+	if(j<0){
+		j=4;
+	}
+		console.log(j);
+		var img=document.getElementById("image0");
+		img.src="images/pic"+ (j%4) +".jpeg";
+		var img=document.getElementById("image1");
+		img.src="images/pic"+ ((j+1)%4) +".jpeg";
+		var img=document.getElementById("image2");
+		img.src="images/pic"+ ((j+2)%4) +".jpeg";
+}
+
 var Naming=setInterval(function(){ starting();},200);
