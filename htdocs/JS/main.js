@@ -4,7 +4,6 @@ var i=0,j=0;
 
 
 function starting() {
-	console.log(1);
 	if(i>=19 && i<23){
 		document.getElementById("i-name").innerHTML=name;
 		i++;
@@ -34,7 +33,6 @@ function sliding(x) {
 	if(j<0){
 		j=4;
 	}
-		console.log(j);
 		var img=document.getElementById("image0");
 		img.src="images/pic"+ (j%4) +".jpeg";
 		var img=document.getElementById("image1");

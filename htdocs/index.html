@@ -13,20 +13,27 @@
 			$(".button-nav").click(function(){
 				if(dd){
 					console.log(1);
-					$(".icon-nav").css({"height":"100vh"});
-					$(".icon-nav").css({"display":"initial"});
+					$(".button-nav div span:first").css({  "transform": "translate(0, 10px) rotate(45deg)","display":"inline-block"});
+					$(".button-nav div span:last").css({  "transform": "translate(-97px, 10px) rotate(-45deg)","display":"inline-block"});
+					$(".button-nav div span:odd").css({"background-color":"#333","display":"inline-block"});
+					$(".icon-nav").css({"padding-top":"30vh","height":"100vh","width":"100vw","display":"inline-block"});
 					$(".icon-nav ul li").css({"display":"block"});
 					dd=false;
 				}
 				else{
 					console.log(1);
-					$(".icon-nav").css({"height":"auto"});
-					$(".icon-nav").css({"display":""});
+					$(".button-nav div span:first").css({ "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+					$(".button-nav div span:last").css({  "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+					$(".button-nav div span:odd").css({"background-color":"white","display":"block"});
+					$(".icon-nav").css({"height":"auto","display":"","padding-top":"0vh"});
 					$(".icon-nav ul li").css({"display":"inline-block"});
 					dd=true;
 				}
 			});
 			$(".nav-b").click(function(){
+				$(".button-nav div span:first").css({ "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+				$(".button-nav div span:last").css({  "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+				$(".button-nav div span:odd").css({"background-color":"white","display":"block"});
 				$(".icon-nav").css({"display":""});
 				$(".icon-nav ul li").css({"display":"inline-block"});
 			});
@@ -54,7 +61,11 @@
 <body>
 	<header>
 		<div class="button-nav" >
-			<span><span></span><span></span><span></span></span>
+			<div >
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</div>
 		<div class="icon-nav">
 			<ul>

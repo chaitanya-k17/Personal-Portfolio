@@ -26,7 +26,6 @@ header{
 }
 .icon-nav{
 	height: auto;
-	display: 
 }
 .icon-nav ul{
 	text-align: center;
@@ -41,10 +40,13 @@ a{
 	text-decoration: none;
 	color: white;
 }
+a:hover{
+	color: red;
+}
 .button-nav{
 	display: none;
 }
-.button-nav  span span{
+.button-nav  div span{
 	margin: 5px 10px ;
 	width: 25px;
 	height: 5px;
@@ -254,7 +256,7 @@ a{
 	padding-left: 10vw;
 	padding-bottom: 10vh;
 	float: left;
-	width: 35vw;
+	width: 45vw;
 	text-align: center;
 	line-height: 3vh;
 }
@@ -323,6 +325,9 @@ input[type="submit"]:hover{
 	padding:1.6vmax ;
 	text-align: center;
 	border-radius: 50%;
+}
+.otherwebsites ul li{
+	list-style-type: none;
 }
 .otherwebsites .arrow:hover{
 	border: .1vmax solid white;
