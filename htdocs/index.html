@@ -12,7 +12,6 @@
 		$(document).ready(function(){
 			$(".button-nav").click(function(){
 				if(dd){
-					console.log(1);
 					$(".button-nav div span:first").css({  "transform": "translate(0, 10px) rotate(45deg)","display":"inline-block"});
 					$(".button-nav div span:last").css({  "transform": "translate(-97px, 10px) rotate(-45deg)","display":"inline-block"});
 					$(".button-nav div span:odd").css({"background-color":"#333","display":"inline-block"});
@@ -21,7 +20,6 @@
 					dd=false;
 				}
 				else{
-					console.log(1);
 					$(".button-nav div span:first").css({ "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
 					$(".button-nav div span:last").css({  "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
 					$(".button-nav div span:odd").css({"background-color":"white","display":"block"});
@@ -55,10 +53,23 @@
     			$(".contact").slideToggle(1000);
     			$("header").fadeToggle(1000);
   			});
+		  	var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+				var currentScrollPos = window.pageYOffset;
+		  		if (prevScrollpos <= currentScrollPos) {
+		    		$("header").hide(1000);
+		  		} 
+		  		else {
+ 		    		$("header").show(1000);
+
+		  		}
+		  	prevScrollpos = currentScrollPos;
+			}
 		});
 	</script>
 </head>
 <body>
+
 	<header>
 		<div class="button-nav" >
 			<div >
@@ -78,7 +89,6 @@
 		</div>
 	</header>
 
-
 	<div class="intro" id="intro">
 			<p class="i-name" id="i-name"></br></p>
 			<p class="i-clg" id="i-clg"></p>
@@ -86,7 +96,6 @@
 			<br><br><br>
 			<span class="arrow  down"><i class="arrow-down"></span></i>
 	</div>
-
 
 	<div class="profile" id="p">
 		<div>
@@ -107,7 +116,6 @@
 			</ul>
 		</div>
 	</div>
-
 
 	<div class="academic" id="a" >
 		<h1 class="headings">Academics</h1><br>
@@ -195,8 +203,6 @@
 		</div>
 	</div>
 
-
-
 	<div class="gallery" id="g" >
 		<h1 class="headings" >Gallery</h1>
 		<span onclick="sliding(0);"><i class="arrow-left" ></i></span>
@@ -252,6 +258,8 @@
 			</div>
 		</div>
 	</div>
+
+
 	<script type="text/javascript" src="JS/main.js"></script>
 </body>
 </html>
