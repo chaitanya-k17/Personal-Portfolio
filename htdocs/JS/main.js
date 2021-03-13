@@ -2,7 +2,7 @@ var name="Chaitanya Khiratkar";
 var cllg="Third Year Chemical Engineering<br>IIT KHARAGPUR <br>";
 var i=0,j=0;
 
-
+console.log("1");
 function starting() {
 	if(i>=19 && i<23){
 		document.getElementById("i-name").innerHTML=name;
