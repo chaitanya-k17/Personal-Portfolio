@@ -34,11 +34,11 @@ function sliding(x) {
 		j=4;
 	}
 		var img=document.getElementById("image0");
-		img.src="images/pic"+ (j%4) +".jpeg";
+		img.src="Images/pic"+ (j%4) +".jpeg";
 		var img=document.getElementById("image1");
-		img.src="images/pic"+ ((j+1)%4) +".jpeg";
+		img.src="Images/pic"+ ((j+1)%4) +".jpeg";
 		var img=document.getElementById("image2");
-		img.src="images/pic"+ ((j+2)%4) +".jpeg";
+		img.src="Images/pic"+ ((j+2)%4) +".jpeg";
 }
 
 var Naming=setInterval(function(){ starting();},200);
