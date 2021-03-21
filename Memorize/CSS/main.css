@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:   #808080;
+	text-align: center;
+}
+.level {
+	color: #000000;
+	font-size: 5vmax;
+	font-weight: 900;
+}
+.ko{
+	color: #2a3b90;
+	font-size: 7vmax;
+	font-weight: 900;
+}
+.button{
+	font-size: 2vmin;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+	width:10vmax;
+	height: 10vmax;
+	text-align: center;
+	border: none;
+	border-radius: 2vmax;
+	margin: 5vh 2vw 5vh 2vw;
+	padding: 10px;
+	box-shadow: .5vmin .5vmin #bfbfbf;
+}
+.bg-pressed{
+	animation-name: danger;
+	animation-duration: .2s;
+}
+.pressed{
+	animation-name: flash;
+	animation-duration: 5s;
+}
+.button:hover{
+	border: 5px solid white;
+	box-shadow: none;
+}
+.button:active{
+	animation-name: flash;
+	animation-duration: 5s;
+}
+/*.b0:active{
+	animation-name: flash;
+	animation-duration: 2s;
+}*/
+.b0{
+	background-color:  #000000;
+}
+.b1{
+	background-color:  red;
+}
+.b2{
+	background-color:  blue;
+}
+.b3{
+	background-color: green;
+}
+.b4{
+	background-color:  yellow;
+}
+@keyframes flash{
+	from{background-color:  #00ffff;,border:2px solid white;,box-shadow: 5vmin 5vmin black;}
+	to {background-color:  #00ffff;}
+}
+@keyframes danger{
+	from{background-color: #cc0000;,border:2px solid white;,box-shadow: 5vmin 5vmin black;}
+	to {background-color:  #00ffff;}
+}
