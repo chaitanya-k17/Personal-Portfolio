@@ -18,6 +18,7 @@ body{
 /* Header styling */
 
 header{
+	z-index:10;
 	display: none;
 	width: 100vw;
 	position: fixed; 
