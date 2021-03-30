@@ -1,209 +1,244 @@
 <!DOCTYPE html>
-<html id="page">
+<html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Chaitanya Khiratkar</title>
-	<link rel="stylesheet" type="text/css" href="profile.css">
-	 <script src="jquery-3.5.1.js"></script>
-	 <script type="text/javascript">
-	 	$(document).ready(function(){
-  			$("#dd-img").click(function(){
-    			$("#main-page").slideToggle(1500);
-    			$("#intro").slideToggle(1500);
+	<link rel="stylesheet" type="text/css" href="CSS/main.css" >
+	<script src="JS/jquery-3.5.1.js"></script>
+	<script type="text/javascript">
+		var dd;
+		dd=true;
+		$(document).ready(function(){
+			$(".button-nav").click(function(){
+				if(dd){
+					$(".button-nav div span:first").css({  "transform": "translate(0, 10px) rotate(45deg)","display":"inline-block","transition-duration": ".5s"});
+					$(".button-nav div span:last").css({  "transform": "translate(-97px, 10px) rotate(-45deg)","display":"inline-block"});
+					$(".button-nav div span:odd").css({"background-color":"#333","display":"inline-block"});
+					$(".icon-nav").css({"padding-top":"30vh","height":"100vh","width":"100vw","display":"inline-block"});
+					$(".icon-nav ul li").css({"display":"block"});
+					dd=false;
+				}
+				else{
+					$(".button-nav div span:first").css({ "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+					$(".button-nav div span:last").css({  "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+					$(".button-nav div span:odd").css({"background-color":"white","display":"block"});
+					$(".icon-nav").css({"height":"auto","display":"","padding-top":"0vh"});
+					$(".icon-nav ul li").css({"display":"inline-block"});
+					dd=true;
+				}
+			});
+			$(".nav-b").click(function(){
+				$(".button-nav div span:first").css({ "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+				$(".button-nav div span:last").css({  "transform": "translate(0, 0px) rotate(0deg)","display":"block"});
+				$(".button-nav div span:odd").css({"background-color":"white","display":"block"});
+				$(".icon-nav").css({"display":""});
+				$(".icon-nav ul li").css({"display":"inline-block"});
+			});
+			$(".down").click(function(){
+    			$(".intro").slideToggle(900);
+    			$(".profile").slideToggle(1000);
+    			$(".academic").slideToggle(1000);
+    			$(".activities").slideToggle(1000);
+    			$(".gallery").slideToggle(1000);
+    			$(".contact").slideToggle(1000);
     			$("header").fadeToggle(1000);
   			});
-  			$("#du-img").click(function(){
-    			$("#main-page").slideToggle(2000);
-    			$("#intro").slideToggle(2000);
+  			$(".up").click(function(){
+    			$(".intro").slideToggle(1000);
+    			$(".profile").slideToggle(200);
+    			$(".academic").slideToggle(400);
+    			$(".activities").slideToggle(600);
+    			$(".gallery").slideToggle(800);
+    			$(".contact").slideToggle(1000);
     			$("header").fadeToggle(1000);
   			});
-  		});
-	 </script>
+		});
+	</script>
 </head>
 <body>
-	<header id="p-header">
-			<div class="p-nav" id="pNav">
-				<ul class="p-nav-list">
-					<li>
-						<a href="#p">Profile</a>
-					</li>
-					<li>
-						<a href="#a">Academics</a>
-					</li>
-					<li>
-						<a href="#ac">Activities</a>
-					</li>
-					<li>
-						<a href="#g">Gallery</a>
-					</li>
-					<li>
-						<a href="#c">Contact</a>
-					</li>
+	<header>
+		<div class="button-nav" >
+			<div >
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="icon-nav">
+			<ul>
+				<li><a class="nav-b" href="#p">Profile</a></li>
+				<li><a class="nav-b" href="#a">Academics</a></li>
+				<li><a class="nav-b" href="#ac">Activities</a></li>
+				<li><a class="nav-b" href="#g">Gallery</a></li>
+				<li><a class="nav-b" href="#c">Contact</a></li>
 			</ul>
 		</div>
 	</header>
-	<div class="main" id="i">
-		<div class="intro" id="intro">
+	<div class="intro" id="intro">
 			<p class="i-name" id="i-name"></br></p>
 			<p class="i-clg" id="i-clg"></p>
-			<span class="line"></span><br>
-			<img src="images/dropdown.jpg" alt="GO DOWN" id="dd-img">
+			<span class="line"></span>
+			<br><br><br>
+			<span class="arrow  down"><i class="arrow-down"></span></i>
+	</div>
+	<div class="profile" id="p">
+		<div>
+			<div class="ppic" >
+				<img src="Images/profile.jpeg"  alt="Chaitanya_profile_pic">
+			</div>
+			<article class="speech">
+				<h1>	
+				Hola , I am Chaitanya !<span>
+				 A Third Year Undergraduate student,Chemical Enginnering Department at  Indian Institute of Technology, Kharagpur .</span>
+				</h1>	
+			</article>
 		</div>
-		<div id="main-page">
-			<div class="profile" id="p">
-					<div class="ppic" >
-						<img src="images/profile.jpeg"  alt="Chaitanya_profile_pic">
-					</div>
-					<article class="speech">
-						<br><br><br>
-						<p>
-							Hola , I am Chaitanya !<br><br>	
-							 A Third Year Undergraduate student,Chemical Enginnering Department at  Indian Institute of Technology, Kharagpur.
-						</p>	
-					</article>
-			</div>
-			<div class="academic" id="a" >
-					<h1 style="font-size: 3em; padding-bottom: 1%;">Academics</h1>
-					<div class="edu"> 
-						<img src="images/edu.png" alt="education">
-						<span class="Year">
-							<h2>B.Tech</h2>
-							<i>August 2018 - May 2022</i>
-						</span>
-						<span class="s-name">
-							<h2>Indian Institute of Technology, Kharagpur</h2>
-							JEE Advance: 99.6 percentile<br>
-							JEE Mains : 99.9 percentile<br>
-						</span>
-					</div>
-					<div class="edu"> 
-						<img src="images/edu.png" alt="education">
-						<span class="Year">
-							<h2>HSC-Maharashtra State Board</h2>
-							<i>April 2016 - March 2018</i>
-						</span>
-						
-						<span class="s-name">
-							<h2>Arts Commerce and Science College,Chandrapur</h2>
-							Scored a 90% in Final HSC Examination held all over Maharashtra <br>
-						</span>
-					</div>
-					<div class="edu"> 
-						<img src="images/edu.png" alt="education">
-						<span class="Year">
-							<h2>SSC-CBSE</h2>
-							<i>May 2008 - March 2016</i>
-						</span>
-						<span class="s-name">
-							<h2>Macaroon Students' Academy CBSE School, Wani</h2>
-							Scored 10 cgpa in the SSC Exam  held all over india
-						</span>
-					</div>
-			</div>
-			<div class="activities" id="ac">
-					<h1 style="font-size: 3em; padding-bottom: 3%;">Activities</h1>
-					<div class="por"> 
-						<span class="Year">
-							<h2>Core-organizing Team Member</h2>
-							<i>August 2019 - March 2020</i>
-						</span>
-						<span class="t-name">
-							<h2>Kshitij 2019</h2>
-							<ul>
-								<i>Part of the 23 Member Core Team of the symposium which is responsible for Publicity and Sponsorship</i>
-								<li>Solely garnered INR 2.25 lakhs worth net corporate sponsorship and alumni contribution from regions of Mumbai</li>
-								<li>Approached Messaging Companies and Media Platforms to have them as Messaging and Online Media Partners</li>
-								<li>Led a team of 42 Campus Affiliates &12 Campus Ambassadors responsible for the publicity of Kshitij 2020</li>
-								<li>As Web Sub-coordinator managed Kshitij official website and ensured the updates about the fest website</li>
-							</ul>
-						</span>
-					</div>
-					<div class="por"> 
-						<span class="Year">
-							<h2>Kshitij Campus Affliate</h2>
-							<i>September 2018 - August 2019</i>
-						</span>
-						<span class="t-name">
-							<h2>Kshitij 2020</h2>
-						<ul>
-								<i>Part of the 40 - Member Team which is responsible for publicity of the fest and final execution of all its events</i>
-								<li>Responsible for the in-house publicity of the events of Kshitij 2019 among the 12,000 residents at the institute</li>
-								<li>Publicized Kshitij 2019 by visiting various colleges of Kolkata and also on social media platform•Succesfully printed 3 media articles in Nagpur Newspaper and publicity in various Nagpur colleges</li>
-								
-							</ul>
-						</span>
-					</div>
-					<div class="por"> 
-						<span class="Year">
-							<h2>Design Team Member </h2>
-							<i>October 2019 - November 2019</i>
-						</span>
-						<span class="t-name">
-							<h2>MMM Hall of Residence</h2>
-						<ul>
-							<li>Part of the Design Team of MMM Hall of Residence, managing a team of 20 freshers for all the design related tasks</li>
-							<li>Responsible for the creation of the main design of Illumination adhering to the theme of the competition.</li>
-							<li>Responsible for the ideation and delivery of other artworks and ensuring active participation from all the boarders.</li>
-							</ul>
-						</span>
-					</div>
-			</div>
-			<div class="gallery" id="g" >
-				<h1 style="font-size: 3em; padding-bottom: 3%;">Gallery</h1>
-				<span class="l-b">
-					<a onclick="sliding(1);"><img alt="left" onclick="" src="images/lside.jpg"></a>
+		<div class="skills">
+			<i>Skills</i>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="academic" id="a" >
+		<h1 class="headings">Academics</h1><br>
+		<div class="edu"> 
+			<img src="Images/edu.png" alt="education">
+			<span class="Year">
+				<h2>B.Tech</h2>
+				<i>August 2018 - May 2022</i>
+			</span>
+			<span class="s-name">
+				<h2>Indian Institute of Technology,  Kharagpur</h2>
+				JEE Advance: 99.6 percentile<br>
+				JEE Mains : 99.9 percentile<br>
+			</span>
+		</div>
+		<div class="edu"> 
+			<img src="Images/edu.png" alt="education">
+			<span class="Year">
+				<h2>HSC-Maharashtra State Board</h2>
+				<i>April 2016 - March 2018</i>
+			</span>	
+			<span class="s-name">
+				<h2>Arts Commerce and Science College,Chandrapur</h2>
+				Scored a 90% in Final HSC Examination held all over Maharashtra <br>
+			</span>
+		</div>
+		<div class="edu"> 
+			<img src="Images/edu.png" alt="education">
+			<span class="Year">
+				<h2>SSC-CBSE</h2>
+				<i>May 2008 - March 2016</i>
+			</span>
+			<span class="s-name">
+				<h2>Macaroon Students' Academy CBSE School, Wani</h2>
+				Scored 10 cgpa in the SSC Exam  held all over india
+			</span>
+		</div>
+	</div>
+	<div class="activities" id="ac">
+		<h1 class="headings">Activities</h1>
+		<div class="por"> 
+			<span class="Year">
+				<h2>Core-organizing Team Member</h2>
+				<i>August 2019 - March 2020</i>
+			</span>
+			<span class="t-name">
+				<h2>Kshitij 2020</h2>
+				<ul>
+					<i>Part of the 23 Member Core Team of the symposium which is responsible for Publicity and Sponsorship</i>				
+					<li>Solely garnered INR 2.25 lakhs worth net corporate sponsorship and alumni contributio from regions of Mumbai</li>
+					<li>Approached Messaging Companies and Media Platforms to have them as Messaging and Online Media Partners</li>
+					<li>As Web Sub-coordinator managed Kshitij official website and ensured the updates about the website</li>
+				</ul>
+			</span>
+		</div>
+		<div class="por"> 
+			<span class="Year">
+				<h2>Kshitij Campus Affliate</h2>
+				<i>September 2018 - August 2019</i>	
+			</span>
+			<span class="t-name">
+				<h2>Kshitij 2020</h2>
+				<ul>
+					<i>Part of the 40 - Member Team which is responsible for publicity of the fest and final execution of all its events</i>
+					<li>Responsible for the in-house publicity of the events of Kshitij 2019 among the 12,000 residents at the institute</li>
+					<li>Publicized Kshitij 2019 by visiting various colleges of Kolkata and also on social media platform</li>
+					<li>Succesfully printed 3 media articles in Nagpur Newspaper and publicity in various Nagpur colleges</li>
+				</ul>
+			</span>
+		</div>
+		<div class="por"> 
+			<span class="Year">
+				<h2>Design Team Member </h2>
+				<i>October 2019 - February 2020</i>				
+			</span>
+			<span class="t-name">
+				<h2>MMM Hall of Residence</h2>
+				<ul>
+					<i>Part of the Design Team of MMM Hall of Residence, managing a team of 20 freshers for all the design related tasks</i>
+					<li>Responsible for the creation of the main design of Illumination adhering to the theme of the competition.</li>
+					<li>Responsible for the ideation and delivery of other artworks and ensuring active participation from all the boarders.</li>
+				</ul>
+			</span>
+		</div>
+	</div>
+	<div class="gallery" id="g" >
+		<h1 class="headings" >Gallery</h1>
+		<span onclick="sliding(0);"><i class="arrow-left" ></i></span>
+			<span class="imgs" >
+				<img alt="image" onclick="sliding(0)" src="Images/pic0.jpeg" id="image0" >
+				<img alt="image" src="Images/pic1.jpeg" id="image1" >
+				<img alt="image" onclick="sliding(1);" src="Images/pic2.jpeg" id="image2" >
+			</span>
+		<span onclick="sliding(1);"><i class="arrow-right" ></i></span>
+	</div>
+	<div class="contact" id="c">
+		<h1 class="headings">Contact</h1>
+		<div class="message">
+			<form action="index.html#c" method="post" onsubmit="Messaging()">
+			<label>E-mail :</label><br>
+				<input type="mail" name="mail"><br>
+				<label>Message :</label><br>
+				<textarea type="message" name="message"></textarea> <br>
+				<input type="submit" name="submit" value="Send">
+			</form>
+		</div>
+		<div class="social">
+			<h1 style="font-size: 2.5em; padding-bottom: 3% ;color: white;">Connect me</h1>
+			<div class="s-media">
+				<span>
+				<a href="https://www.facebook.com/people/Chaitanya-Khiratkar/100008049107079"><img src="Images/fb_bw.png" alt="fb"></>
 				</span>
-				<span class="imgs" >
-					<img alt="image" src="images/pic0.jpeg" id="images" >
+				<span>
+					<a href="https://www.instagram.com/chaitu___17/"><img src="Images/insta_bw.png" alt="insta"></a>
 				</span>
-				<span class="r-b">
-					<a onclick="sliding(0);"><img alt="right" onclick="" src="images/rside.jpg"></a>
+				<span>
+					<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiu-OnJ5e7uAhVdzDgGHbcZBI0QFjAAegQIBBAC&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fchaitanya-khiratkar-734522191&usg=AOvVaw0uKRPeoEA5X6HN4B7tzP_a"><img src="Images/linkedin_bw.jpg" alt="linkedin"></a>
+				</span>
+				<span>
+						<a href="mailto:chaitanyakhiratkar17@gmail.com"><img src="Images/mail.jpg" alt="mail"></a>
 				</span>
 			</div>
-			<div class="contact" id="c">
-				<div class="h1c"> <h1 style="font-size: 3em; padding-bottom: 3%;">Contact</h1></div>
-				<div class="message">
-					<form action="index.html#c" method="post" onsubmit="Messaging()">
-						<label>E-mail :</label><br>
-						<input type="mail" name="mail"><br>
-						<label>Message :</label><br>
-						<textarea type="message" name="message"></textarea> <br>
-						<input type="submit" name="submit" value="Send">
-					</form>
-				</div>
-				<div class="social">
-					<h1 style="font-size: 2.5em; padding-bottom: 3% ;color: white;">Lets get Connected</h1>
-					<div class="s-media">
-						<span>
-							<a href="https://www.facebook.com/people/Chaitanya-Khiratkar/100008049107079"><img src="images/fb_bw.png" alt="fb"></a>
-						</span>
-						<span>
-							<a href="https://www.instagram.com/chaitu___17/"><img src="images/insta_bw.png" alt="fb"></a>
-						</span>
-						<span>
-							<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiu-OnJ5e7uAhVdzDgGHbcZBI0QFjAAegQIBBAC&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fchaitanya-khiratkar-734522191&usg=AOvVaw0uKRPeoEA5X6HN4B7tzP_a"><img src="images/linkedin_bw.jpg" alt="linkedin"></a>
-						</span>
-						<span>
-							<a href="mailto:chaitanyakhiratkar17@gmail.com"><img src="images/mail.jpg" alt="mail"></a>
-						</span>
-					</div>
-				</div>
-				<div class="t-foot">
-					<br>	
-					Thanks For Visiting my first website !<br>
-					Visit my more websites<br>
-					<div class="otherwebsites">
-						<ul>
-							<li><a href="JSClock.html">JS-Clock</a></li>
-						</ul>
-						<br>
-					</div>
-					<b>GO HOME</b><br>
-					<img src="images/dropup.jpg" alt="GO DOWN" id="du-img">
-				</div>
+		</div>
+		<div class="t-foot">
+			Thanks For Visiting my first website !<br>
+			Visit my more websites<br><br>
+			<div class="otherwebsites">
+				<ul>
+					<li><a href="JSClock.html">JS-Clock</a></li>
+				</ul>
+				<br>
+				<span class="arrow up">
+					<i class="arrow-up"></i>
+				</span>
 			</div>
 		</div>
 	</div>
-<script type="text/javascript" src="profileJS.js"></script>
+	
+
+	<script type="text/javascript" src="JS/main.js"></script>
 </body>
 </html>
