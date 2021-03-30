@@ -64,7 +64,7 @@ a:hover{
 	width: 100vw;
 	clear: both;
 	text-align: center;
-	background-image: url("../images/tb.jpg");
+	background-image: url("./images/tb.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
