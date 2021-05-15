@@ -1,7 +1,7 @@
 import './App.css';
 import './Style.css';
 import 'boxicons'
-
+import { BrowserRouter as Router } from "react-router-dom";
 import Headers from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
 import Landing from "./Components/LandingPage/LandingPage"
@@ -15,15 +15,18 @@ import Contact from "./Components/Contact/Contact"
 function App() {
   return (
     <div className="App">
-      <Headers />
-        <main id="main">
-            <Landing />
-            <About />
-            <Skills />
+      <Router>
+        <>
+          <Headers />
+          <main id="main">
+            < Landing />
+              <About />
+              <Skills />
             <Resume />
-            <Contact />
-
-        </main>
+            < Contact />
+          </main>
+        </>
+      </Router>
       <Footer />
 
     </div>

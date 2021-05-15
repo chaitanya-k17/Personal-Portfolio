@@ -3,7 +3,7 @@ import 'boxicons'
 function Resume() {
   return (
     <>
-      <section id="resume" class="resume">
+      <section id="resume" class="resume ">
         <div class="container">
 
           <div class="section-title">
@@ -73,7 +73,7 @@ function Resume() {
               </div>
               <div class="resume-item">
                 <h4>SSC-CBSE</h4>
-                <h5>May 2008 - March 2016</h5>
+                <h5>2008 - 2016</h5>
                 <p><em>Macaroon Students' Academy CBSE School, Wani</em></p>
                 <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
               </div>
