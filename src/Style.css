@@ -304,6 +304,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     color: #173b6c;
+    padding-bottom: 3px;
   }
   
   .section-title h2::after {

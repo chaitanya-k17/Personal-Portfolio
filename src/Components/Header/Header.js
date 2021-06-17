@@ -56,7 +56,9 @@ function Headers() {
               <li><a href="#hero"  activeClassName="active"  class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
               <li><a href="#about" activeClassName="active" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
               <li><a href="#resume" activeClassName="active" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+              <li><a href="#gallery" activeClassName="active" class="nav-link scrollto"><i class='bx bx-images'></i> <span>Gallery</span></a></li>
               <li><a href="#contact" activeClassName="active" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+
             </ul>
           </nav>
         </div>

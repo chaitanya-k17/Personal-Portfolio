@@ -22,12 +22,12 @@ function Contact() {
               </div>
 
               <div class="email">
-                <i class="bi bi-envelope"></i>
+              <a href="mail:chaitanyak.iitkgp@gmail.com"><i class="bi bi-envelope"></i></a>
                 <h4>Email:</h4>
                 <p>chaitanyak.iitkgp@gmail.com</p>
               </div>
               <div class="phone">
-                <i class="bi bi-whatsapp"></i>
+                <a href="tel:+917057868697"><i class='bx bxs-phone-call bx-tada bx-rotate-180' ></i></a>
                 <h4>Call:</h4>
                 <p>+91 -7057868697</p>
               </div>

@@ -1,0 +1,97 @@
+
+
+.gallery {
+  perspective:700px;
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  flex-flow:row wrap;
+  overflow:hidden;
+  min-height:50vh;
+}
+
+.gallery ul {
+  position:relative;
+  width:100px; 
+  height:100px;
+  margin:0.1em;
+  perspective-origin:center center;
+  transform-style:preserve-3d;
+  transform:rotateX(40deg);
+  transition:all 0.4s;
+  padding: 10px;
+}
+
+.gallery ul:hover {
+  transform:translateZ(100px) rotateX(20deg); z-index:999;
+  perspective:0;
+}
+
+.gallery ul:hover li {
+  filter:grayscale(0);
+}
+
+.gallery li {
+  position:absolute; left:0; top:0;
+  backface-visibility:hidden;
+  width:100%; height:100%;
+  transition:transform 1s, filter 1s;
+  /* background:coral; */
+  /* filter:grayscale(0.9); */
+}
+/*
+Setup individual planes final poistion(by left top) and initial position(by transform)
+*/
+.orderImage li:first-of-type {transform:none;}
+.orderImage li:nth-of-type(2) {left:100%; transform-origin:left center; transform:rotateY(180deg);}
+.orderImage li:nth-of-type(3) {top:100%; transform-origin:center top; transform:rotateX(-180deg);}
+.orderImage li:nth-of-type(4) {left:-100%; transform-origin:right center; transform:rotateY(-180deg);}
+.orderImage li:nth-of-type(5) {top:-100%; transform-origin:center bottom; transform:rotateX(180deg);}
+.orderImage li:nth-of-type(6) {top:100%; left:100%; transform-origin:center top; transform:rotateX(-180deg);}
+.orderImage li:nth-of-type(7) {top:100%; left:-100%; transform-origin:right center; transform:rotateY(-180deg);}
+.orderImage li:nth-of-type(8) {top:-100%; left:-100%; transform-origin:center bottom; transform:rotateX(180deg);}
+.orderImage li:nth-of-type(9) {top:-100%; left:100%; transform-origin:left center; transform:rotateY(180deg);}
+/*
+Setup transition-delay, for mouseout state 
+*/
+.orderImage li:nth-of-type(2),.orderImage li:nth-of-type(3),.orderImage li:nth-of-type(4),.orderImage li:nth-of-type(5) {transition-delay:0.03s;}
+.orderImage li:nth-of-type(6),.orderImage li:nth-of-type(7),.orderImage li:nth-of-type(8),.orderImage li:nth-of-type(9) {transition-delay:0s;}
+.gallery ul:hover :nth-of-type(2),.gallery ul:hover :nth-of-type(3),.gallery ul:hover :nth-of-type(4),.gallery ul:hover :nth-of-type(5) {transition-delay:0s}
+.gallery ul:hover :nth-of-type(6),.gallery ul:hover :nth-of-type(7),.gallery ul:hover :nth-of-type(8),.gallery ul:hover :nth-of-type(9) {transition-delay:0.2s}
+/*
+Setup planes final state
+*/
+.gallery ul:hover :nth-of-type(2),.gallery ul:hover :nth-of-type(4),.gallery ul:hover :nth-of-type(7),.gallery ul:hover :nth-of-type(9) {transform:rotateY(0);}
+.gallery ul:hover :nth-of-type(3), .gallery ul:hover :nth-of-type(5),.gallery ul:hover :nth-of-type(6), .gallery ul:hover :nth-of-type(8) {transform:rotateX(0);}
+/* 
+Set background position
+*/
+.gallery ul li {background-size:300% 300%;}
+.gallery li:nth-of-type(1) {background-position:center center;}
+.gallery li:nth-of-type(2) {background-position:right center;}
+.gallery li:nth-of-type(3) {background-position:center bottom;}
+.gallery li:nth-of-type(4) {background-position:left center;}
+.gallery li:nth-of-type(5) {background-position:center top;}
+.gallery li:nth-of-type(6) {background-position:right bottom;}
+.gallery li:nth-of-type(7) {background-position:left bottom;}
+.gallery li:nth-of-type(8) {background-position:left top;}
+.gallery li:nth-of-type(9) {background-position:right top;}
+/*
+Set background image source
+*/
+.gallery ul:nth-of-type(1) li { background-image:url(https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg);}
+.gallery ul:nth-of-type(1) { width:120px; height:60px; }
+.gallery ul:nth-of-type(2) li { background-image:url(https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567__340.jpg);}
+.gallery ul:nth-of-type(2) { width:90px; height:90px; }
+.gallery ul:nth-of-type(3) li { background-image:url(//picsum.photos/1618/712?image=996);}
+.gallery ul:nth-of-type(3) { width:130px; height:130px; }
+.gallery ul:nth-of-type(4) li { background-image:url(//picsum.photos/1200/800?image=1005);}
+.gallery ul:nth-of-type(4) { width:120px; height:130px; }
+.gallery ul:nth-of-type(5) li { background-image:url(https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__480.jpg);}
+.gallery ul:nth-of-type(5) { width:64px; height:90px; }
+.gallery ul:nth-of-type(6) li { background-image:url(https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg);}
+.gallery ul:nth-of-type(6) { width:100px; height:60px; }
+/* 
+Hide debug label 
+*/
+.gallery li { text-indent:999px; overflow:hidden; }

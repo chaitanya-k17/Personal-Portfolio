@@ -9,27 +9,48 @@ import About from "./Components/About/About"
 import Skills from "./Components/Skills/Skills"
 import Resume from "./Components/Resume/Resume"
 import Contact from "./Components/Contact/Contact"
-
+import Gallery from './Components/Gallery/gallery';
+import { useState } from 'react';
 
 
 function App() {
+
+  const [isLoading, setisLoading] = useState(false);
+
   return (
+
+
     <div className="App">
-      <Router>
-        <>
-          <Headers />
-          <main id="main">
-            < Landing />
-              <About />
-              <Skills />
-            <Resume />
-            < Contact />
-          </main>
-        </>
-      </Router>
-      <Footer />
+      {
+        isLoading ?
+          <>
+            <div className="Loader">
+              <i class='bx bx-loader-circle  loaderspin'  ></i>
+
+            </div>
+          </>
+          :
+          <>
+            <Router>
+              <>
+                <Headers />
+                <main id="main">
+                  < Landing />
+                  < About />
+                  < Skills />
+                  < Resume />
+                  < Gallery />
+                  < Contact />
+                </main>
+              </>
+            </Router>
+            <Footer />
+          </>
+      }
+
 
     </div>
+
   );
 }
 
