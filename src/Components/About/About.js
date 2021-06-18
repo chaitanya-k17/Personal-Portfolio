@@ -5,10 +5,10 @@ import profile from "../profile.jpeg"
 function About() {
   return (
       <>
-    <section id="about" class="about">
+    <section id="about" className="about section-bg">
       <div class="container">
 
-        <div class="section-title">
+        <div class="section-title ">
           <h2>About</h2>
         </div>
         <div class="row">

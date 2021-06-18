@@ -276,6 +276,7 @@ body {
   section {
     padding: 40px 50px;
     overflow: hidden;
+    background-color: #dbf0e5;
   }
   @media (max-width: 1024px) {
     section{
@@ -291,7 +292,7 @@ body {
   }
   
   .section-bg {
-    background: #eaf0fb;
+    background: #eaf0fb !important;
   }
   
   .section-title {
@@ -431,6 +432,7 @@ body {
   
   .skills .progress .skill .val {
     float: right;
+    left : 10vw;
     font-style: normal;
   }
   
@@ -454,7 +456,11 @@ body {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #050d18;
+    color: #000000;
+    /* text-decoration: underline; */
+    padding: 10px;
+    font-style: italic;
+    transition: width 3s ;
   }
   
   .resume .resume-item {
@@ -503,8 +509,8 @@ body {
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #149ddd;
-    border: 2px solid #149ddd;
+    background: #ffffff;
+    border: 5px solid #149ddd;
   }
   
   /*--------------------------------------------------------------
