@@ -18,7 +18,7 @@ function About() {
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Web Developer.</h3>
             <p class="fst-italic">
-            I am Chaitanya Khiratkar, a third-year undergraduate student at the Indian Institute of Technology, Kharagpur, one of the top universities in India. 
+            &nbsp; I am Chaitanya Khiratkar, a third-year undergraduate student at the Indian Institute of Technology, Kharagpur, one of the top universities in India. 
             I am currently pursuing a major in Chemical Engineering ( B.Tech). During my course of study, I have developed a keen interest in Software Development.
             </p>
             <br></br>

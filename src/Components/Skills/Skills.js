@@ -12,7 +12,10 @@ function Skills() {
 
           <div class="section-title">
             <h2>Skills</h2>
-            <p>I am familiar with C++/C, Python, Javascript, and various Back-end development frameworks such as Node.js, Express Js. In addition to this, I am well versed in Database Management Systems such as MongoDB. In addition to this, to further develop my abilities, I familiar with Data Structures and algorithm concepts such as Dynamic Programming, Graphs, Binary Trees, etc. I have also gained experience in version control platforms GitHub and Open-Source Programming</p>
+            <p> 
+               I am familiar with C++/C, Python, Javascript, and various Back-end development frameworks such as Node.js, Express Js. In addition to this, I am well versed in Database Management Systems such as MongoDB. 
+              In addition to this, to further develop my abilities, I familiar with Data Structures and algorithm concepts such as Dynamic Programming, Graphs, Binary Trees, etc. 
+              I have also gained experience in version control platforms GitHub and Open-Source Programming</p>
           </div>
 
           <div class="row skills-content">

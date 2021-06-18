@@ -8,10 +8,10 @@ function Resume() {
 
           <div class="section-title">
             <h2>Resume</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliq
+            {/* <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliq
             uid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam c
             upiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste
-             officiis commodi quidem hic quas.</p>
+             officiis commodi quidem hic quas.</p> */}
           </div>
 
           <div class="row">

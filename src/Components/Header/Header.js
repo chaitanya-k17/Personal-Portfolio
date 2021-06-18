@@ -50,7 +50,7 @@ function Headers() {
               <a href="https://in.linkedin.com/in/chaitanya-khiratkar-734522191" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
-
+ 
           <nav id="navbar" class="nav-menu navbar">
             <ul>
               <li><a href="#hero"  activeClassName="active"  class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
