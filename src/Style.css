@@ -1,4 +1,4 @@
-
+/* Hex code: #d9a5b3, #1868ae, #c6d7eb  */
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
@@ -152,7 +152,7 @@ body {
   .nav-menu a {
     display: flex;
     align-items: center;
-    color: #a8a9b4;
+    color: #ffffff;
     padding: 12px 15px;
     margin-bottom: 8px;
     transition: 0.3s;
@@ -162,12 +162,12 @@ body {
   .nav-menu a i {
     font-size: 24px;
     padding-right: 8px;
-    color: #6f7180;
+    color: #ffffff;
   }
   
   .nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a {
     text-decoration: none;
-    color: #fff;
+    color: #149ddd;
   }
   
   .nav-menu a:hover i, .nav-menu .active i, .nav-menu li:hover > a i {
@@ -292,7 +292,7 @@ body {
   }
   
   .section-bg {
-    background: #eaf0fb !important;
+    background: #dae4f8 !important;
   }
   
   .section-title {
@@ -413,6 +413,9 @@ body {
   /*--------------------------------------------------------------
   # Akills
   --------------------------------------------------------------*/
+  .skills{
+    background-color: rgb(234, 240, 251) !important;
+  }
   .skills .progress {
     height: 60px;
     display: block;
@@ -451,23 +454,67 @@ body {
   /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
+  .resume{
+    background-color: #ffffff !important;
+
+  }
+
+  .resume .content {
+    display: flex !important;
+    padding: 40px 0px !important;
+    align-items: center !important; 
+    overflow: hidden;
+    background-color: #c6d7eb;
+    /* z-index: 1000; */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 2px 0px #00000075;
+  }
+
+  
   .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #000000;
-    /* text-decoration: underline; */
+    color: #173b6c;
     padding: 10px;
     font-style: italic;
-    transition: width 3s ;
+    transition: width 2s ease;
+    text-align: center;
+    text-decoration: underline;
+    /* background-color: red; */
+    display: grid;
+    height: 100%;
+    align-items: center;
+  }
+  .resume  .switch{
+    position: relative;
+    bottom: -50px !important;
+    width: auto;
+    opacity: 0.9;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: x-large;
+    display: flex;
+    /* z-index: 10000; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 2px 0px 1px #173b6c;
+  }
+  .resume  .switch:hover{
+    transform: scale(1.01);
   }
   
+
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid #149ddd;
     position: relative;
+    transition: width 2s  ease-in-out,display 3s ease;
+
   }
   
   .resume .resume-item h4 {
@@ -482,7 +529,7 @@ body {
   
   .resume .resume-item h5 {
     font-size: 16px;
-    background: #e4edf9;
+    background: #fafafa;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -509,8 +556,25 @@ body {
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #ffffff;
+    background: #b9d8c8;
     border: 5px solid #149ddd;
+  }
+
+  @media (max-width: 1000px) {
+    .resume .content {
+      display: initial !important;
+      justify-content: center !important;
+    }
+    .resume .resume-title{
+      display: flex !important;
+      margin: 40px 0px;
+      height: inherit;
+      justify-content: center;
+    }
+    .resume .resume-item{
+      margin: 0px 20px !important;
+    }
+
   }
   
   /*--------------------------------------------------------------

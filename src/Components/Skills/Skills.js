@@ -7,7 +7,7 @@ function Skills() {
   return (
     <>
 
-      <section id="skills" class="skills section-bg">
+      <section id="skills" class="skills">
         <div class="container">
 
           <div class="section-title">
