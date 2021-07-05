@@ -1,5 +1,7 @@
 import 'boxicons'
 import ProgressBar from 'react-animated-progress-bar';
+import "./Skills.css"
+
 
 function Skills() {
 

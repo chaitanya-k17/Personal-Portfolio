@@ -1,3 +1,23 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+  }
+  
+  a {
+    color: #149ddd;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+    
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
 .Loader{
     width: 100%;
     height: 100%;
@@ -21,4 +41,58 @@
     from {transform: rotate(0deg);}
     /* 50% {transform: rotate(360deg);} */
     to{transform: rotate(360deg);}
+  }
+
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 40px 50px;
+    overflow: hidden;
+    background-color: #dbf0e5;
+  }
+  @media (max-width: 1024px) {
+    section{
+      padding: 40px 30px;
+
+    }
+  }
+  
+  @media (max-width: 768px) {
+    section{
+      padding: 40px 20px;
+    }
+  }
+  
+  .section-bg {
+    background: #dae4f8 !important;
+  }
+  
+  .section-title {
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    padding-bottom: 3px;
+  }
+  
+  .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10vw;
+    height: 2px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
   }

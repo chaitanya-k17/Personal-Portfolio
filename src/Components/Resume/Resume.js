@@ -1,5 +1,6 @@
 import 'boxicons'
 import { useState } from 'react'
+import "./Resume.css"
 
 const Data = [
   {

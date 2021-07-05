@@ -1,4 +1,5 @@
 import 'boxicons'
+import './Contact.css';
 
 function Contact() {
   return (

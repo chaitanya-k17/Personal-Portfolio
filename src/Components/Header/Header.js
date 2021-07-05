@@ -1,6 +1,7 @@
 import 'boxicons'
 import { useEffect, useState } from "react"
-import profile from "../profile.jpeg"
+import profile from "../../Images/profile.jpeg"
+import "./Header.css"
 
 function Headers() {
 

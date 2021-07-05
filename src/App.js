@@ -1,5 +1,5 @@
 import './App.css';
-import './Style.css';
+// import './Style.css';
 import 'boxicons'
 import { BrowserRouter as Router } from "react-router-dom";
 import Headers from "./Components/Header/Header"
@@ -11,7 +11,7 @@ import Resume from "./Components/Resume/Resume"
 import Contact from "./Components/Contact/Contact"
 import Gallery from './Components/Gallery/gallery';
 import { useState } from 'react';
-
+ 
 
 function App() {
 
@@ -26,7 +26,6 @@ function App() {
           <>
             <div className="Loader">
               <i class='bx bx-loader-circle  loaderspin'  ></i>
-
             </div>
           </>
           :

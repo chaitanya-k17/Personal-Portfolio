@@ -1,5 +1,6 @@
 
 import 'boxicons'
+import './LandingPage.css'
 
 function Landing() {
     return (

@@ -1,5 +1,6 @@
 
 import 'boxicons'
+import './Footer.css';
 
 function Footer() {
     return (

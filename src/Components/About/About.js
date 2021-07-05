@@ -1,5 +1,6 @@
 import 'boxicons'
-import profile from "../profile.jpeg"
+import profile from "../../Images/profile.jpeg"
+import './About.css';
 
 
 function About() {
