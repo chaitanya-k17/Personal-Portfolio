@@ -2,6 +2,7 @@ import 'boxicons'
 import { useEffect, useState } from "react"
 import profile from "../../Images/profile.jpeg"
 import "./Header.css"
+import { NavLink } from "react-router-dom";
 
 function Headers() {
 
@@ -54,11 +55,11 @@ function Headers() {
  
           <nav id="navbar" class="nav-menu navbar">
             <ul>
-              <li><a href="#hero"  activeClassName="active"  class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
-              <li><a href="#about" activeClassName="active" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-              <li><a href="#resume" activeClassName="active" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-              <li><a href="#gallery" activeClassName="active" class="nav-link scrollto"><i class='bx bx-images'></i> <span>Gallery</span></a></li>
-              <li><a href="#contact" activeClassName="active" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+              <li><NavLink to="/"  activeClassName="active" onClick={ToogleNav}   class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></NavLink></li>
+              {/* <li><NavLink to="/" activeClassName="active" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li> */}
+              <li><NavLink to="/resume" activeClassName="active" onClick={ToogleNav}  class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></NavLink></li>
+              <li><NavLink to="/gallery" activeClassName="active" onClick={ToogleNav} class="nav-link scrollto"><i class='bx bx-images'></i> <span>Gallery</span></NavLink></li>
+              <li><NavLink  to="/contact" activeClassName="active" onClick={ToogleNav} class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></NavLink></li>
 
             </ul>
           </nav>

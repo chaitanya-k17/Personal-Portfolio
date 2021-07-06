@@ -1,7 +1,7 @@
 import './App.css';
 // import './Style.css';
 import 'boxicons'
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Headers from "./Components/Header/Header"
 import Footer from "./Components/Footer/Footer"
 import Landing from "./Components/LandingPage/LandingPage"
@@ -11,7 +11,7 @@ import Resume from "./Components/Resume/Resume"
 import Contact from "./Components/Contact/Contact"
 import Gallery from './Components/Gallery/gallery';
 import { useState } from 'react';
- 
+
 
 function App() {
 
@@ -34,12 +34,18 @@ function App() {
               <>
                 <Headers />
                 <main id="main">
-                  < Landing />
-                  < About />
-                  < Skills />
-                  < Resume />
-                  < Gallery />
-                  < Contact />
+                  <Switch>
+                    <Route exact path="/">
+                      <>
+                        < Landing />
+                        < About />
+                        < Skills />
+                      </>
+                    </Route>
+                    <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/resume" component={Resume} />
+                    <Route exact path="/gallery" component={Gallery} />
+                  </Switch>
                 </main>
               </>
             </Router>
