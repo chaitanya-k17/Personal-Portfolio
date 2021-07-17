@@ -50,7 +50,7 @@ const Data = [
         ]
       },
       {
-        title: "Lets Connect",
+        title: "Cubicle",
         time: "April'21-June'21",
         content: [
           {
