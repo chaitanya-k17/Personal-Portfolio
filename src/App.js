@@ -42,10 +42,11 @@ function App() {
                         < Skills />
                       </>
                     </Route>
+                                      </Switch>
+
                     <Route exact path="/contact" component={Contact} />
                     <Route exact path="/resume" component={Resume} />
                     <Route exact path="/gallery" component={Gallery} />
-                  </Switch>
                 </main>
               </>
             </Router>
