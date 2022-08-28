@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Link from "next/link";
 
 
 import styles from "../../styles/shared/AboutMe.module.css"
@@ -31,11 +32,11 @@ const AboutMe: NextPage = () => {
                                         </tr>
                                         <tr>
                                             <th>Phone</th>
-                                            <th><a href="tel:+917057868697">(+91) 7057868697</a></th>
+                                            <th><Link href="tel:+917057868697">(+91) 7057868697</Link></th>
                                         </tr>
                                         <tr>
                                             <th>Email</th>
-                                            <th><a href="mailto:chaitanyak.iitkgp@gmail.com">chaitanyak.iitkgp@gmail.com</a></th>
+                                            <th><Link href="mailto:chaitanyak.iitkgp@gmail.com">chaitanyak.iitkgp@gmail.com</Link></th>
                                         </tr>
                                         <tr>
                                             <th>City</th>

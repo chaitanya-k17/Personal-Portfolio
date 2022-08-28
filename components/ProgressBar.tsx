@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { useState } from "react";
 
 
 import styles from "../styles/components/ProgressBar.module.css"
@@ -11,7 +12,7 @@ export interface PropsShape {
 
 const ProgressBar: NextPage<PropsShape> = ({ head, value }) => {
 
-    const r = 100-value
+    const [r,setr]= useState(100-+value);
 
     return (
         <div className={styles.progress_item}
