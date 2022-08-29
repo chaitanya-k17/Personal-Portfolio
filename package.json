@@ -6,22 +6,21 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "start:prod":"next start -p 80",
+    "start:prod": "next start -p 80",
     "lint": "next lint"
   },
   "dependencies": {
     "boxicons": "^2.1.2",
-    "next": "12.2.2",
+    "next": "12.2.5",
     "react": "18.2.0",
-    "react-animated-progress-bar": "^1.1.1",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.0.6",
-    "@types/react": "18.0.15",
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.2",
-    "typescript": "4.7.4"
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "4.8.2"
   }
 }
