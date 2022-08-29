@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -79,9 +80,12 @@ const Home: NextPage = () => {
             <div className={styles.border1}></div>
             <div className={styles.border2}></div>
             <div className={styles.img_holder}>
-              <img
+              <Image
                 src="/images/profile.jpeg"
                 alt="image"
+                layout='responsive'
+                height={400}
+                width={400}
               />
               <div className={styles.absolute_img} data-bg-img="img/right.jpg" ></div>
             </div>
