@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         {/*Other Addtional Data  */}
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+        <meta name="google-site-verification" content="TtFDsGL1rsGC-ETYdYFFFD0MJXiBi1Tl1l_lTBP3mNk" />
         {/* Adding up the Meta Tags For Better SEO Optimizations */}
         <meta property="og:title" content="Chaitanya Khiratkar" />
         <meta property="og:url" content="https://chaitanya-khiratkar.web.app" />
