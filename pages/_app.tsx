@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:description" content="I am Chaitanya Khiratkar, a third-year undergraduate student at the Indian Institute of Technology, Kharagpur, one of the top universities in India. I am currently pursuing a major in Chemical Engineering ( B.Tech). During my course of study, I have developed a keen interest in Software Development." />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://chaitanya-khiratkar.web.app/static/media/profile.e890939f.jpeg" />
-
+        <meta http-equiv="REFRESH" content="0;url=https://chaitanyak.info"/>
 
         
 
