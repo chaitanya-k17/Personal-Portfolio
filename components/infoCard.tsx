@@ -11,6 +11,10 @@ export interface PropsShape {
 
 }
 
+function createMarkup() {
+    return {__html: 'First &middot; Second'};
+  }
+
 
 const InfoCard: NextPage<PropsShape> = ({ head, span, position, points }) => {
 
@@ -21,15 +25,18 @@ const InfoCard: NextPage<PropsShape> = ({ head, span, position, points }) => {
                     <h5>{head}</h5><span>( {span} )</span>
                 </div>
                 <h3>{position}</h3>
+                <ul>
+
                 {
 
                     points.map((point, index) => {
                         return (
-                            <p key={index} >
-                                {point}
-                            </p>)
+                            <li key={index} dangerouslySetInnerHTML={{ __html: `${point}` }}>
+                            </li>
+                            )
                     })
                 }
+                </ul>
 
             </div>
         </>

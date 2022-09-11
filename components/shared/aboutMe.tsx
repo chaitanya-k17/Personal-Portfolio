@@ -6,10 +6,23 @@ import styles from "../../styles/shared/AboutMe.module.css"
 import InfoCard from "../infoCard";
 import ProgressBar from "../ProgressBar";
 
+
+const languageSkillData = {
+    Cpp: 90,
+    Java: 90,
+    Javascript: 90,
+    HTML: 95,
+    CSS: 95,
+    Typescript: 90,
+
+}
+
+
+
 const AboutMe: NextPage = () => {
 
     return (
-        <>
+        <div id="about" >
             <section id={styles.about}>
                 <div className={styles.container}>
                     <div className={styles.roww}>
@@ -60,7 +73,11 @@ const AboutMe: NextPage = () => {
                                     span="February'22 - Today"
                                     position="Software Development Intern"
                                     points={[
-                                        "Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        "Developed the cross-platform childcare application using <strong>React Native</strong> and <strong>Redux</strong> for central state management",
+                                        "Revamped and built a horizontally scalable and maintainable server architecture using <strong>Elastic Beanstalk</strong> and CI / CD pipeline using CircleCI and AWS CodeDeploy decreasing deploy time by 80 % and server downtime by 90 % ",
+                                        "Built the backend using GraphQL, Sequelize, and Cloud services like AWS SES, S3, Beanstalk, and GCP Firestore",
+                                        "Optimised website performance using Dynamic Import, Next/Image, Pagination and Script Optimization  from <strong>40% to 85% on Lighthouse</strong>",
+                                        "Built FE & BE for the internal <strong>CRM Portal</strong>, building services like order and product management, user management customer support, sales dashboard, and engagement notification with <strong>RBAC</strong> for all company employees"
                                     ]}
                                 />
 
@@ -72,7 +89,9 @@ const AboutMe: NextPage = () => {
                                     span="August'22 - Today"
                                     position="Software Development Intern"
                                     points={[
-                                        "Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        "Developed an Android app for business-use using React Native being actively used in multiple African Countries",
+                                        "Developed various <strong>Android Native Modules</strong> to build POS features like card reader, barcode scanner and biometrics",
+                                        "Integrated and patched various APIs like payment, tracking, service renewal, customer support, etc using AWS"
                                     ]}
                                 />
 
@@ -94,6 +113,18 @@ const AboutMe: NextPage = () => {
 
 
 
+
+                                <InfoCard
+
+                                    head="Project"
+                                    span="January 2021"
+                                    position="Personal Portfolio and Blogging"
+                                    points={[
+                                        "Built a Portfolio and Blogging website using Next.js (Typescript) and deployed it with CircleCI CI/CD Piepeline",
+                                        "Used Elastic Beanstalk to deploy it while provisioning load balancers, security groups, VPC and compute resources",
+                                        "Built Serverless backend using AWS Lambda, API Gateway for blog creation and fetching and storing in DynamoDB"
+                                    ]}
+                                />
                             </div>
 
                             <div className={styles.tablet}>
@@ -136,33 +167,24 @@ const AboutMe: NextPage = () => {
                             <div className={styles.tablet + " " + styles.tablet_skills}>
                                 <h3 className={styles.info_title} >Skills</h3>
 
-                                <ProgressBar
-
-                                    head="HTML"
-                                    value={85}
-                                />
-                                <ProgressBar
-
-                                    head="React"
-                                    value={65}
-                                />
-                                <ProgressBar
-
-                                    head="React Native"
-                                    value={94}
-                                />
-                                <ProgressBar
-
-                                    head="JS"
-                                    value={76}
-                                />
+                                {
+                                    (Object.keys(languageSkillData) as Array<keyof typeof languageSkillData>).map((value , index) => {
+                                        return (
+                                            <ProgressBar
+                                                key={index}
+                                                head={value}
+                                                value={languageSkillData[value]}
+                                            />
+                                        )
+                                    })
+                                }
 
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 

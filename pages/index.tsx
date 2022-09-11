@@ -82,7 +82,7 @@ const Home: NextPage = () => {
             <div className={styles.img_holder}>
               <Image
                 src="/images/profile.jpeg"
-                alt="image"
+                alt="chaitanya khiratkar"
                 layout='responsive'
                 height={400}
                 width={400}
@@ -113,6 +113,7 @@ const Home: NextPage = () => {
         <div className={styles.page}>
           <Intro />
           <AboutMe />
+          
           <Footer />
         </div>
 
