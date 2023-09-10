@@ -1,15 +1,15 @@
-#about {
-    padding: 100px 0 50px
+.about {
+    padding: 100px 0 50px;
 }
 
-#about .main_title {
+.about .main_title {
     margin-bottom: 74px
 }
 
 .container {
     padding: 0 12%;
     margin: 0 auto;
-    width: 100%
+    width: 100%;
 }
 
 .main_title>:last-child {
@@ -122,6 +122,8 @@
 
 
 .tablet {
+    padding-bottom:36px;
+
     margin: 0;
     padding: 0;
     display: -moz-flex;

@@ -8,13 +8,14 @@ import ProgressBar from "../ProgressBar";
 
 
 const languageSkillData = {
+    ReactNative:80,
     Cpp: 90,
     Java: 90,
     Javascript: 90,
     HTML: 95,
     CSS: 95,
-    Typescript: 90,
-
+    Typescript: 70,
+    SQL:90
 }
 
 
@@ -22,14 +23,20 @@ const languageSkillData = {
 const AboutMe: NextPage = () => {
 
     return (
-        <div id="about" >
-            <section id={styles.about}>
+        <section id="about" >
+            <div className={styles.about}>
                 <div className={styles.container}>
                     <div className={styles.roww}>
                         <div className={styles.main_title}>
                             <h3 className={styles.subtitle}>About Me</h3>
                             <h3 className={styles.title}>Biography</h3>
-                            <p className={styles.desc}>I am Chaitanya Khiratkar, a Final-year undergraduate student at the Indian Institute of Technology, Kharagpur, one of the top universities in India. I am currently pursuing a major in Chemical Engineering ( B.Tech). During my course of study, I have developed a keen interest in Software Development.</p>
+                            <p className={styles.desc}>I am Chaitanya Khiratkar,
+                                Software Developer, the Indian Institute of Technology Alumini,
+                                Kharagpur, one of the top universities in India.
+                                I have completed my major in Chemical Engineering ( B.Tech + M.Tech).
+                                During my course of study, I have developed a keen interest in
+                                Software Development.
+                            </p>
                         </div>
                         <div className={styles.about_info}>
                             <div className={styles.about_left}>
@@ -168,7 +175,7 @@ const AboutMe: NextPage = () => {
                                 <h3 className={styles.info_title} >Skills</h3>
 
                                 {
-                                    (Object.keys(languageSkillData) as Array<keyof typeof languageSkillData>).map((value , index) => {
+                                    (Object.keys(languageSkillData) as Array<keyof typeof languageSkillData>).map((value, index) => {
                                         return (
                                             <ProgressBar
                                                 key={index}
@@ -183,8 +190,8 @@ const AboutMe: NextPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     )
 }
 

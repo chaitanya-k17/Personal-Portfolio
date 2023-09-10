@@ -1,0 +1,250 @@
+.contact {
+    padding: 150px 0 200px;
+}
+
+.contact {
+    padding: 150px 0 200px
+}
+
+.container {
+    padding: 0 12%;
+    margin: 0 auto;
+    width: 100%
+}
+
+.contact .resumo_fn_main_title {
+    margin-bottom: 58px
+}
+
+
+.resumo_fn_main_title>:last-child {
+    margin-bottom: 0 !important
+}
+
+.resumo_fn_main_title .subtitle {
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: var(--mc);
+    margin: 0 0 54px
+}
+
+.resumo_fn_main_title .title {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0 0 15px;
+    margin: 0 0 34px;
+    position: relative
+}
+
+.resumo_fn_main_title .title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .2);
+    width: 150px;
+    left: 0
+}
+
+.resumo_fn_main_title .desc {
+    padding: 0;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0;
+    margin: 0 0 57px
+}
+
+
+.contact .contact_form,
+.resumo_fn_contact {
+    width: 100%;
+    float: left;
+    clear: both
+}
+
+.resumo_fn_contact .input_wrapper {
+    width: 100%;
+    position: relative
+}
+
+.resumo_fn_contact .input_wrapper input,
+.resumo_fn_contact .input_wrapper textarea {
+    position: relative;
+    z-index: 3
+}
+
+.resumo_fn_contact .moving_placeholder {
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    line-height: 70px;
+    margin: 0;
+    padding: 0 0 0 30px;
+    font-weight: 400;
+    color: #888;
+    transform-origin: left;
+    z-index: 1;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all .15s cubic-bezier(.4, 0, .2, 1)
+}
+
+.resumo_fn_contact .active .moving_placeholder {
+    transform: scale(.75) translateY(-85%);
+    color: var(--mc);
+    background: #1d1b19;
+    z-index: 33;
+    padding-right: 30px;
+    margin-left: 10px;
+    top: 0;
+    height: 25px;
+    line-height: 25px
+}
+
+.resumo_fn_contact textarea {
+    height: 200px
+}
+
+.resumo_fn_contact .items {
+    margin-left: -20px
+}
+
+.resumo_fn_contact .item {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    margin-bottom: 20px
+}
+
+.resumo_fn_contact .item:last-child {
+    margin-bottom: 0
+}
+
+.resumo_fn_contact .item.half {
+    width: 50%
+}
+
+.resumo_fn_contact .contact_form .a,
+.resumo_fn_contact .contact_form a {
+    display: block;
+    line-height: 26px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 20px;
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, .2)
+}
+
+.resumo_fn_contact .contact_form .a:hover,
+.resumo_fn_contact .contact_form a:hover {
+    border-color: var(--mc);
+    color: var(--mc)
+}
+
+.resumo_fn_contact .contact_form .a:focus,
+.resumo_fn_contact .contact_form a:focus {
+    outline: 1px dashed #444
+}
+
+.empty_notice {
+    margin-bottom: 25px
+}
+
+.empty_notice,
+.error {
+    color: #dd3936
+}
+
+.empty_notice,
+.error,
+.success {
+    display: none;
+    text-align: left;
+    font-weight: 500
+}
+
+.success {
+    color: #009140;
+    margin-bottom: 25px
+}
+
+.contact_error {
+    color: #dd3936
+}
+
+.resumo_fn_contact_info {
+    padding: 95px 0 0
+}
+
+.resumo_fn_contact_info p {
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 0 10px
+}
+
+.resumo_fn_contact_info h3 {
+    padding: 0;
+    margin: 0 0 58px;
+    font-weight: 400;
+    max-width: 300px
+}
+
+.resumo_fn_contact_info h3 a {
+    text-decoration: none
+}
+
+.resumo_fn_contact_info .fn__link {
+    text-transform: none;
+    font-size: 18px
+}
+
+.resumo_fn_contact_info :last-child {
+    margin-bottom: 0
+}
+
+.fn__link {
+    text-decoration: none;
+    color: #ddd;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, .2)
+}
+
+.fn__link:hover {
+    border-bottom-color: rgba(255, 255, 255, .4)
+}
+
+
+
+@media(max-width:480px) {
+    .container {
+        padding: 0 10px
+    }
+}
+
+@media(max-width:1040px) {
+    .container {
+        padding: 0 20px
+    }
+}
+@media(max-width:1400px) {
+
+    .container {
+        padding: 0 8%
+    }
+}

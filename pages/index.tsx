@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Footer from '../components/general/footer'
 import AboutMe from '../components/shared/aboutMe'
+import Contact from '../components/shared/Contact'
 import Intro from '../components/shared/intro'
 import styles from "../styles/Home.module.css"
 
@@ -16,22 +17,21 @@ const Home: NextPage = () => {
     "Chaitanya Khiratkar",
     "Programmer",
     "Kgpian",
-
   ]
 
 
   const pages = [
     {
       name: "Home",
-      page: "/#",
+      page: "#",
     },
     {
       name: "About",
-      page: "/#about",
+      page: "#about",
     },
     {
       name: "Contact",
-      page: "/#contact",
+      page: "#contact ",
     }
 
   ]
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
         <div className={styles.page}>
           <Intro />
           <AboutMe />
-          
+          <Contact />
           <Footer />
         </div>
 

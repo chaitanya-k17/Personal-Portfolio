@@ -271,7 +271,10 @@
 .page{
     width: 100%;
     float: left;
-    clear: both
+    clear: both;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
