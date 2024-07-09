@@ -51,3 +51,22 @@
     font-weight: 400;
     margin: 0 0 17px;
 }
+
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+}
+
+.timeline span {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.timeTitle {
+    color: black;
+    font-weight: 500;
+}

@@ -1,19 +1,17 @@
 .contact {
     padding: 150px 0 200px;
-}
-
-.contact {
-    padding: 150px 0 200px
+    margin-bottom: 10px;
+    border-width: 1px;
 }
 
 .container {
     padding: 0 12%;
     margin: 0 auto;
-    width: 100%
+    width: 100%;
 }
 
 .contact .resumo_fn_main_title {
-    margin-bottom: 58px
+    margin-bottom: 10px;
 }
 
 
@@ -202,7 +200,7 @@
     padding: 0;
     margin: 0 0 58px;
     font-weight: 400;
-    max-width: 300px
+    /* max-width: 300px */
 }
 
 .resumo_fn_contact_info h3 a {

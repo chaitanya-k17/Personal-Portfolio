@@ -1,24 +1,12 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import Footer from '../components/general/footer'
-import AboutMe from '../components/shared/aboutMe'
-import Contact from '../components/shared/Contact'
-import Intro from '../components/shared/intro'
 import styles from "../styles/Home.module.css"
+import { AboutMe, Contact, Footer, Intro } from '../components'
 
 const Home: NextPage = () => {
-
-  const iam = [
-    "Software Developer",
-    "Chaitanya Khiratkar",
-    "Programmer",
-    "Kgpian",
-  ]
-
 
   const pages = [
     {
@@ -30,10 +18,13 @@ const Home: NextPage = () => {
       page: "#about",
     },
     {
-      name: "Contact",
-      page: "#contact ",
-    }
-
+      name: "Resume",
+      page: "/resume",
+    },
+    // {
+    //   name: "Contact",
+    //   page: "#contact ",
+    // }
   ]
 
   const [isNavOpen, setNavOpen] = useState(false)
@@ -101,7 +92,7 @@ const Home: NextPage = () => {
               <>
                 <span className={styles.circle}>
                 </span >
-                <span className={styles.text}>Need a Software Developer ! Hire me
+                <span className={styles.text}>Need a Software Developer ! <br></br> Hire me
                 </span>
               </>
             </Link>

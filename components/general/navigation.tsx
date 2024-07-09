@@ -1,12 +1,10 @@
 import { NextPage } from "next";
 
 
-const Navigation : NextPage = ()=>{
+export const Navigation : NextPage = ()=>{
 
     return (
         <>
         </>
     )
 }
-
-export default Navigation;

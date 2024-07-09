@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "../../styles/components/Footer.module.css"
 
 
-const Footer: NextPage = () => {
+export const Footer: NextPage = () => {
 
     return (
         <>
@@ -28,5 +28,3 @@ const Footer: NextPage = () => {
         </>
     )
 }
-
-export default Footer

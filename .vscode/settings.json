@@ -1,0 +1,9 @@
+{
+    "eslint.format.enable": true,
+    "eslint.ignoreUntitled": true,
+    "eslint.lintTask.enable": true,
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+}

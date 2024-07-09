@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
+import styles from "../../styles/components/ProgressBar.module.css"
 
-
-import styles from "../styles/components/ProgressBar.module.css"
 
 export interface PropsShape {
     head: String,
@@ -10,7 +9,7 @@ export interface PropsShape {
 }
 
 
-const ProgressBar: NextPage<PropsShape> = ({ head, value }) => {
+export const ProgressBar: NextPage<PropsShape> = ({ head, value }) => {
 
     const [r,setr]= useState(100-+value);
 
@@ -36,5 +35,3 @@ const ProgressBar: NextPage<PropsShape> = ({ head, value }) => {
 
 
 }
-
-export default ProgressBar;

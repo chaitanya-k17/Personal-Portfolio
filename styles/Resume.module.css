@@ -1,0 +1,183 @@
+.pageContainer {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #86aceb;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainDiv {
+    font-family: "Rubik", sans-serif;
+    width: 834px;
+    height: 1167px;
+    margin: auto;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    display: block;
+}
+
+.name {
+    font-size: xx-large;
+    color: black;
+    font-weight: 600;
+}
+
+.sublabel {
+    font-size: medium;
+    font-weight: 600;
+    color: #1E90FF;
+}
+
+.topDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    font-weight: 600;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: rgb(56, 67, 71);
+    padding-bottom: 7px;
+}
+
+.mainContent {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.right {
+    display: flex;
+    flex: 7;
+    flex-direction: column;
+}
+
+.sectionHead {
+    font-size: large;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+}
+
+.expMain {
+    padding-bottom: 2.5px;
+    margin-bottom: 2px;
+}
+
+.section .expMain:not(:last-child) {
+    border-bottom: 0.8px dashed grey;
+}
+
+.section{
+    padding-bottom: 10px;
+}
+
+
+.expHeading {
+    font-size: medium;
+    color: rgb(56, 67, 71);
+    padding-bottom: 1px;
+}
+
+.techHead {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+}
+
+.techHeading {
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+}
+
+.techLeft{
+    padding: 0px 10px;
+}
+
+.stacks{
+    font-size: small;
+    color: rgb(56, 67, 71);
+}
+
+.expSubHeading {
+    font-size: small;
+    font-weight: 600;
+    color: #1E90FF;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: small;
+    color: rgb(56, 67, 71);
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.timeline span {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    color: rgb(56, 67, 71);
+    text-decoration: none;
+    padding-right: 5px;
+    /* border: 1px solid red; */
+    /* line-height: 1.3; */
+    text-align: center;
+}
+
+.timeline .time:not(:last-child)::after {
+    content: "|";
+        color: rgb(56, 67, 71);
+}
+
+.timeTitle {
+    color: rgb(56, 67, 71);
+    /* font-weight: 600; */
+    /* line-height: 1.3; */
+}
+
+.expView {
+    margin: 0px;
+    margin-left: -25px;
+    /* line-height: 1.3; */
+}
+
+.point {
+    font-size: small;
+    color: rgb(56, 67, 71);
+}
+
+@media print {
+
+    .pageContainer {
+        /* width: auto; */
+        /* height: auto; */
+        /* overflow: hidden; */
+        /* background-color: transparent */
+    }
+
+    .mainDiv {
+         width: 100%;
+        height: 100%;
+    }
+}

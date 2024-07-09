@@ -1,13 +1,9 @@
-import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import '../styles/globals.css';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-
-
-
 
   return (
     <>
@@ -15,7 +11,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>
           Chaitanya Khiratkar
         </title>
-
         <link rel="apple-touch-icon" href="/Images/profile.jpeg"></link>
         <meta name="description" content="Heyy, I am Chaitanya Khiratkar, a Final-year undergraduate student at the Indian Institute of Technology, Kharagpur, one of the top universities in India"/>
         {/*Other Addtional Data  */}
@@ -27,9 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:description" content="Heyy, I am Chaitanya Khiratkar, a Final-year undergraduate student at the Indian Institute of Technology, Kharagpur, one of the top universities in India" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="/Images/profile.jpeg" />
-
-        
-
       </Head>
       <div className={'GlobalDiv '}>
 

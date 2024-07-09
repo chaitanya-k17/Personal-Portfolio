@@ -3,7 +3,7 @@ import { NextPage } from "next";
 
 import styles from "../../styles/shared/Intro.module.css"
 
-const Intro: NextPage = () => {
+export const Intro: NextPage = () => {
 
     return (
         <>
@@ -28,5 +28,3 @@ const Intro: NextPage = () => {
         </>
     )
 }
-
-export default Intro;

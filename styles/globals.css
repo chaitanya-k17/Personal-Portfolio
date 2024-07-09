@@ -29,7 +29,6 @@ body {
   letter-spacing: 0;
   font-weight: 400;
   color: #888;
-  /* background-color: #1d1b19; */
   word-break: break-word
 }
 
@@ -165,3 +164,19 @@ h6>a:hover {
     font-size: 14px
   }
 }
+
+
+@media print {
+    @page {
+        margin: 0
+    }
+
+    html {
+        margin: 0
+    }
+
+    body {
+        margin: 0;
+        -webkit-print-color-adjust: exact
+    }
+  }
