@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import { CalendarIcon, LocationIcon } from '../components'
-import { EAA, EDUCATION, EXPERIENCE, POR, PROGRAMMING_SKILS, PROJECTS, RESUME_SUB_TEXT_TYPES } from '../constants'
+import { RESUME_DATA, EAA, EDUCATION, EXPERIENCE, POR, PROGRAMMING_SKILS, PROJECTS, RESUME_SUB_TEXT_TYPES } from '../constants'
 import { ResumePrograaming, ResumeSection, ResumeSubText } from '../interfaces'
 import styles from "../styles/Resume.module.css"
 
@@ -45,9 +45,11 @@ const TimeLineItem = (item: ResumeSubText) => {
 
 const ExperienceCard = ({ head, subText, position, points }: ResumeSection, index: number) => {
     return <div className={styles.expMain}>
-        <div className={styles.expHeading}>{position}</div>
-        <div>
-            <div className={styles.expSubHeading}>{head}</div>
+        <div className={styles.random}>
+            <div>
+                <div className={styles.expHeading}>{position}</div>
+                <div className={styles.expSubHeading}>{head}</div>
+            </div>
             <div className={styles.timeline}>
                 {
                     subText?.map(TimeLineItem)
@@ -67,8 +69,7 @@ const ExperienceCard = ({ head, subText, position, points }: ResumeSection, inde
 }
 
 const TechCard = ({ type, items, icon }: ResumePrograaming, index: number) => {
-    return <div className={styles.expMain}>
-        <div className={styles.techHead}>
+    return  <div className={styles.techHead}>
             <img width="23" height="23" src={icon} alt={icon} />
             <div className={styles.techLeft}>
                 <div className={styles.techHeading}>{type}</div>
@@ -81,7 +82,34 @@ const TechCard = ({ type, items, icon }: ResumePrograaming, index: number) => {
                 </div>
             </div>
         </div>
-    </div>
+ }
+
+const Section = (section: string) => {
+
+    let component = null
+    let sectionStyle = null
+
+    switch (section) {
+        case 'PROGRAMMING_SKILS':
+            component = TechCard
+            sectionStyle = styles.techSection
+            break
+        default:
+            component = ExperienceCard
+            sectionStyle = styles.section
+
+    }
+
+    return <>
+        <div className={styles.sectionHead}>
+            {section}
+        </div>
+        <div className={sectionStyle}>
+            {
+                RESUME_DATA[section]?.map(component)
+            }
+        </div>
+    </>
 }
 
 const Resume: NextPage = () => {
@@ -106,68 +134,9 @@ const Resume: NextPage = () => {
                 </span>
             </div>
             <div className={styles.mainContent}>
-                <div className={styles.left}>
-                    {/* Experience */}
-                    <div className={styles.sectionHead}>
-                        EXPERIENCE
-                    </div>
-                    <div className={styles.section}>
-                        {
-                            EXPERIENCE.map(ExperienceCard)
-                        }
-                    </div>
-                    {/* POR */}
-                    <div className={styles.sectionHead}>
-                        POSITION OF RESPONSIBILITY
-                    </div>
-                    <div className={styles.section}>
-
-                        {
-                            POR.map(ExperienceCard)
-                        }
-                    </div>
-                </div>
-                <div className={styles.right}>
-                    {/* Education */}
-                    <div className={styles.sectionHead}>
-                        EDUCATION
-                    </div>
-                    <div className={styles.section}>
-
-                        {
-                            EDUCATION.map(ExperienceCard)
-                        }
-                    </div>
-                    {/* Projects */}
-                    <div className={styles.sectionHead}>
-                        PROJECTS
-                    </div>
-                    <div className={styles.section}>
-
-                        {
-                            PROJECTS.map(ExperienceCard)
-                        }
-                    </div>
-                    {/* Programming stack */}
-                    <div className={styles.sectionHead}>
-                        PROGRAMMING SKILLS
-                    </div>
-                    <div className={styles.section}>
-
-                        {
-                            PROGRAMMING_SKILS.map(TechCard)
-                        }
-                    </div>
-                    {/* ECA */}
-                    <div className={styles.sectionHead}>
-                        Extra Activities
-                    </div>
-                    <div className={styles.section}>
-                        {
-                            EAA.map(ExperienceCard)
-                        }
-                    </div>
-                </div>
+                {
+                    Object.keys(RESUME_DATA).map(Section)
+                }
             </div>
         </div>
     </div>

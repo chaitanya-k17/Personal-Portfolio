@@ -16,8 +16,8 @@ export const AboutMe: NextPage = () => {
                             <h3 className={styles.subtitle}>About Me</h3>
                             <h3 className={styles.title}>Biography</h3>
                             <p className={styles.desc}>I am Chaitanya Khiratkar,
-                                Software Developer, the Indian Institute of Technology Alumini,
-                                Kharagpur, one of the top universities in India.
+                                Software Developer, the Indian Institute of Technology,
+                                Kharagpur Alumini one of the top universities in India.
                                 I have completed my major in Chemical Engineering ( B.Tech + M.Tech).
                                 During my course of study, I have developed a keen interest in
                                 Software Development.

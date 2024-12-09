@@ -5,6 +5,7 @@
     background-color: #86aceb;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
 
 .mainDiv {
@@ -15,6 +16,16 @@
     padding: 15px 40px;
     background-color: #ffffff;
     display: block;
+    transform: 0.6;
+}
+
+.random{
+    flex-direction: 'row';
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex:1;
+    width: 100%;
 }
 
 .name {
@@ -46,21 +57,21 @@
 }
 
 .mainContent {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex: 1; */
+    /* flex-direction: row; */
 }
 
 .left {
     display: flex;
-    flex: 10;
+    /* flex: 10; */
     flex-direction: column;
     padding-right: 10px;
 }
 
 .right {
     display: flex;
-    flex: 7;
+    /* flex: 7; */
     flex-direction: column;
 }
 
@@ -84,20 +95,28 @@
 }
 
 .section{
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
 .expHeading {
     font-size: medium;
     color: rgb(56, 67, 71);
-    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.techSection{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+        padding-bottom: 5px;
 }
 
 .techHead {
-    display: flex;
-    flex-direction: row;
     padding-top: 4px;
+    width: 50% ;
+    flex-direction: row;
+    display: flex;
 }
 
 .techHeading {
@@ -105,6 +124,8 @@
     font-weight: 600;
     color: black;
 }
+
+
 
 .techLeft{
     padding: 0px 10px;
@@ -119,6 +140,7 @@
     font-size: small;
     font-weight: 600;
     color: #1E90FF;
+    flex:1;
 }
 
 .timeline {
@@ -128,7 +150,6 @@
     font-size: small;
     color: rgb(56, 67, 71);
     margin-bottom: 3px;
-    width: 100%;
 }
 
 .timeline span {

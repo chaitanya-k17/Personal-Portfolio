@@ -17,9 +17,9 @@ export const Contact: NextPage = () => {
                             <p>Address</p>
                             <h3>Yavatmal Maharashtra </h3>
                             <p>Phone</p>
-                            <h3><a href="tel:+7068980751">(+706) 898-0751</a></h3>
+                            <h3><a href="tel:+7057868697">(+91)7057868697</a></h3>
                             <p>Email</p>
-                            <h3><a href="mailto:trendycoder.com@gmail.com">trendycoder.com@gmail.com</a></h3>
+                            <h3><a href="mailto:chaitanyak.iitkgp@gmail.com">chaitanyak.iitkgp@gmail.com</a></h3>
                         </div>
                     </div>
                 </div>
