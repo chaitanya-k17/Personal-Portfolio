@@ -14,7 +14,7 @@ export interface ResumeSection {
 
 export interface ResumePrograaming    {
     type: string
-    icon: string,
+    icon?: string,
     items: { 
         name: string,
         score: number 

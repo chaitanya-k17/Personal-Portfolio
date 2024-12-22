@@ -1,204 +1,222 @@
 .pageContainer {
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: #86aceb;
-    justify-content: center;
-    align-items: center;
-    overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+   box-sizing: border-box;
+  background-color: #86aceb;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
 }
 
 .mainDiv {
-    font-family: "Rubik", sans-serif;
-    width: 834px;
-    height: 1167px;
-    margin: auto;
-    padding: 15px 40px;
-    background-color: #ffffff;
-    display: block;
-    transform: 0.6;
+  font-family: "Rubik", sans-serif;
+  width: 834px;
+  height: 1167px;
+  margin: auto;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  display: block;
+  transform: 0.6;
 }
 
-.random{
-    flex-direction: 'row';
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex:1;
-    width: 100%;
+.random {
+  flex-direction: 'row';
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  width: 100%;
+ 
 }
 
 .name {
-    font-size: xx-large;
-    color: black;
-    font-weight: 600;
+  font-size: xx-large;
+  color: black;
+  font-weight: 600;
+ 
 }
 
 .sublabel {
-    font-size: medium;
-    font-weight: 600;
-    color: #1E90FF;
+  font-size: medium;
+  font-weight: 600;
+  color: black;
+
 }
 
 .topDiv {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+
 }
+
+.toprightDiv {
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+
+}
+
+.topLeftDiv {
+  justify-content: space-between;
+  font-weight: 600;
+  padding-top: 10px;
+ }
 
 .topBar {
-    display: flex;
-    align-items: center;
-    font-size: small;
-    color: rgb(56, 67, 71);
-    padding-bottom: 7px;
-}
+  display: flex;
+  align-items: center;
+  font-size: small;
+  color: rgb(56, 67, 71);
+  padding-bottom: 5px;
+ }
 
 .mainContent {
-    /* display: flex; */
-    /* flex: 1; */
-    /* flex-direction: row; */
-}
+  /* display: flex; */
+  /* flex: 1; */
+  /* flex-direction: row; */
+ }
 
 .left {
-    display: flex;
-    /* flex: 10; */
-    flex-direction: column;
-    padding-right: 10px;
+  display: flex;
+  /* flex: 10; */
+  flex-direction: column;
+  padding-right: 10px;
 }
 
 .right {
-    display: flex;
-    /* flex: 7; */
-    flex-direction: column;
+  display: flex;
+  /* flex: 7; */
+  flex-direction: column;
 }
 
 .sectionHead {
-    font-size: large;
-    font-weight: 600;
-    color: black;
-    display: flex;
-    width: 100%;
-    border-bottom: 2px solid black;
-    text-transform: uppercase;
+  font-size: large;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
 }
 
 .expMain {
-    padding-bottom: 2.5px;
-    margin-bottom: 2px;
+  padding-bottom: 2.5px;
+  margin-bottom: 5px;
 }
 
 .section .expMain:not(:last-child) {
-    border-bottom: 0.8px dashed grey;
+  border-bottom: 0.8px dashed grey;
 }
 
-.section{
-    padding-bottom: 5px;
+.section {
+  padding-bottom: 5px;
 }
 
 
 .expHeading {
-    font-size: medium;
-    color: rgb(56, 67, 71);
-    padding-top: 1px;
+  font-size: medium;
+  color: rgb(56, 67, 71);
+  padding-top: 1px;
 }
 
-.techSection{
-    flex-direction: row;
-    flex-wrap: wrap;
-    display: flex;
-        padding-bottom: 5px;
+.techSection {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 5px;
 }
 
 .techHead {
-    padding-top: 4px;
-    width: 50% ;
-    flex-direction: row;
-    display: flex;
+  padding-top: 4px;
+  width: 50%;
+  flex-direction: row;
+  display: flex;
 }
 
 .techHeading {
-    font-size: medium;
-    font-weight: 600;
-    color: black;
+  font-size: small;
+  font-weight: 600;
+  color: black;
 }
 
 
 
-.techLeft{
-    padding: 0px 10px;
+.techLeft {
+  padding: 0px 10px;
 }
 
-.stacks{
-    font-size: small;
-    color: rgb(56, 67, 71);
+.stacks {
+  font-size: small;
+  font-weight: 400;
+  color: rgb(56, 67, 71);
 }
 
 .expSubHeading {
-    font-size: small;
-    font-weight: 600;
-    color: #1E90FF;
-    flex:1;
+  font-size: small;
+  font-weight: 600;
+  color: black;
+  flex: 1;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    font-size: small;
-    color: rgb(56, 67, 71);
-    margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: small;
+  color: rgb(56, 67, 71);
+  margin-top: 3px;
+ 
 }
 
 .timeline span {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .time {
-    color: rgb(56, 67, 71);
-    text-decoration: none;
-    padding-right: 5px;
-    /* border: 1px solid red; */
-    /* line-height: 1.3; */
-    text-align: center;
+  color: rgb(56, 67, 71);
+  text-decoration: none;
+  padding-right: 5px;
+   line-height: 1.3;
+  text-align: center;
 }
 
 .timeline .time:not(:last-child)::after {
-    content: "|";
-        color: rgb(56, 67, 71);
+  content: "|";
+  color: rgb(56, 67, 71);
 }
 
 .timeTitle {
-    color: rgb(56, 67, 71);
-    /* font-weight: 600; */
-    /* line-height: 1.3; */
+  color: rgb(56, 67, 71);
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 .expView {
-    margin: 0px;
-    margin-left: -25px;
-    /* line-height: 1.3; */
+  margin: 0px;
+  margin-left: -25px;
+  line-height: 1.3;
 }
 
 .point {
-    font-size: small;
-    color: rgb(56, 67, 71);
+  font-size: small;
+  color: rgb(56, 67, 71);
 }
 
 @media print {
 
-    .pageContainer {
-        /* width: auto; */
-        /* height: auto; */
-        /* overflow: hidden; */
-        /* background-color: transparent */
-    }
+  .pageContainer {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background-color: transparent
+  }
 
-    .mainDiv {
-         width: 100%;
-        height: 100%;
-    }
+  .mainDiv {
+    width: 100%;
+    height: 100%;
+  }
 }

@@ -1,205 +1,230 @@
 .about {
-    padding: 100px 0 50px;
+  padding: 100px 0 50px;
 }
 
 .about .main_title {
-    margin-bottom: 74px
+  margin-bottom: 74px
 }
 
 .container {
-    padding: 0 12%;
-    margin: 0 auto;
-    width: 100%;
+  padding: 0 12%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .main_title>:last-child {
-    margin-bottom: 0 !important
+  margin-bottom: 0 !important
 }
 
 .main_title .subtitle {
-    padding: 0;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: var(--mc);
-    margin: 0 0 54px
+  padding: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--mc);
+  margin: 0 0 54px
 }
 
 
 .main_title .title {
-    font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 0;
-    padding: 0 0 15px;
-    margin: 0 0 34px;
-    position: relative
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0 0 15px;
+  margin: 0 0 34px;
+  position: relative
 }
 
 
 .main_title .title:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: rgba(255, 255, 255, .2);
-    width: 150px;
-    left: 0
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, .2);
+  width: 150px;
+  left: 0
 }
 
 .main_title .desc {
-    padding: 0;
-    font-size: 30px;
-    line-height: 44px;
-    letter-spacing: 0;
-    margin: 0 0 57px
+  padding: 0;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0;
+  margin: 0 0 57px
 }
 
 
 
 .roww {
-    width: 100%;
-    float: left;
-    clear: both
+  width: 100%;
+  float: left;
+  clear: both
 }
 
 .about_info {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 126px
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 126px
 }
 
 .about_left {
-    width: 100%
+  width: 100%
 }
 
 
 .about_left table {
-    table-layout: fixed;
-    margin: 0
+  table-layout: fixed;
+  margin: 0
 }
 
 .about_left table,
 .about_left table th,
 .about_left table tr {
-    border: none;
-    padding: 0
+  border: none;
+  padding: 0
 }
 
 .about_left table th:first-child {
-    letter-spacing: 1px;
-    color: #333;
-    font-weight: 500;
-    text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
 }
+
 .about_left table th {
-    padding: 9px 10px 9px 0;
-    font-size: 18px;
-    letter-spacing: 0;
-    color: #000;
-    font-weight: 400;
-    text-align: start;
+  padding: 9px 10px 9px 0;
+  font-size: 18px;
+  letter-spacing: 0;
+  color: #000;
+  font-weight: 400;
+  text-align: start;
 }
 
 .about_left table a {
-    text-decoration: none;
-    position: relative;
-    color: #000;
-    border-bottom-color: rgba(0, 0, 0, .2) !important;
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  border-bottom-color: rgba(0, 0, 0, .2) !important;
 }
 
 .about_left table a:hover {
-    border-color: rgba(0, 0, 0, .4) !important
+  border-color: rgba(0, 0, 0, .4) !important
 }
 
 
 .resumo_fn_tabs .tab_header {
-    margin-bottom: 39px
+  margin-bottom: 39px
 }
 
 
 .tablet {
-    padding-bottom:36px;
+  padding-bottom: 36px;
 
-    margin: 0;
-    padding: 0;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -moz-flex-direction: row;
-    -o-flex-direction: row;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none
+  margin: 0;
+  padding: 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none
 }
-.tablet_skills{
-    margin-bottom: 36px;
+
+.tablet_skills {
+  margin-bottom: 36px;
+}
+
+.skillsData {
+  margin:10px;
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+  padding: 42px 40px 43px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.skillsData:after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  left: -1px;
+  top: 50%;
+  margin-top: -25px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all .5s ease 1s;
 }
 
 .info_title {
-    padding: 0;
-    margin: 35px 0px 20px 0px;
-    position: relative
+  padding: 0;
+  margin: 35px 0px 20px 0px;
+  position: relative
 }
 
 .info_title {
-    text-decoration: none;
-    display: inline-block;
-    color: #888;
-    font-weight: 400;
-    font-size: 30px;
-    border-bottom: 1px solid transparent;
-    line-height: 30px;
-    padding-top: 4px;
-    color: var(--mc);
-    border-bottom-color: var(--mc)
+  text-decoration: none;
+  display: inline-block;
+  color: #888;
+  font-weight: 400;
+  font-size: 30px;
+  border-bottom: 1px solid transparent;
+  line-height: 30px;
+  padding-top: 4px;
+  color: var(--mc);
+  border-bottom-color: var(--mc)
 }
 
 
 
 @media(max-width:1400px) {
 
-    .container {
-        padding: 0 8%
-    }
+  .container {
+    padding: 0 8%
+  }
 
-    .about_left {
-        margin-bottom: 54px
-    }
+  .about_left {
+    margin-bottom: 54px
+  }
 }
 
 @media(max-width:1040px) {
-    .container {
-        padding: 0 20px
-    }
+  .container {
+    padding: 0 20px
+  }
 
 }
 
 @media(max-width:768px) {
-    .main_title .desc {
-        font-size: 20px;
-        line-height: 1.5
-    }
+  .main_title .desc {
+    font-size: 20px;
+    line-height: 1.5
+  }
 }
 
 
 @media(max-width:480px) {
-    .container {
-        padding: 0 10px
-    }
+  .container {
+    padding: 0 10px
+  }
 }
 
 @media(max-width:500px) {
 
-    .main_title .title {
-        font-size: 36px
-    }
+  .main_title .title {
+    font-size: 36px
+  }
 }
 
 .main_title .title:after {
-    background-color: rgba(0, 0, 0, .3)
+  background-color: rgba(0, 0, 0, .3)
 }

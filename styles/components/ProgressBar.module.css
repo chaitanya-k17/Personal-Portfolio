@@ -2,7 +2,7 @@
     width: 100%;
     float: left;
     clear: both;
-    margin-bottom: 17px
+    padding-bottom: 25px;
 }
 
 .progress_item:last-child {
@@ -17,7 +17,7 @@
     font-size: 14px;
     font-weight: 400;
     display: block;
-    bottom: 10px;
+    bottom: 20px;
     right: 100%;
     color: var(--mc);
     background-color: rgba(0, 0, 0, 0.05);
@@ -65,12 +65,8 @@
 
 .progress_bg {
     width: 0;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: var(--mc)
+    background-color: var(--mc);
+    height:10px
 }
 
 .progress_bg:after {

@@ -1,7 +1,8 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { EDUCATION, EXPERIENCE, LANGUAGE_SKILLS, PROJECTS } from "../../constants";
 import styles from "../../styles/shared/AboutMe.module.css";
+import { REACT_NATIVE_RESUME_DATA } from "../resume";
+import { EDUCATION, PROGRAMMING_SKILLS } from "../resume/genral";
 import { InfoCard } from "./InfoCard";
 import { ProgressBar } from "../general";
 
@@ -60,7 +61,7 @@ export const AboutMe: NextPage = () => {
               <div className={styles.tablet}>
                 <h3 className={styles.info_title} >Experience</h3>
                 {
-                  EXPERIENCE.map((itemProps, index) => {
+                  REACT_NATIVE_RESUME_DATA['EXPERIENCE'].map((itemProps, index) => {
                     return <InfoCard
                       {...itemProps}
                       key={`${index}+exp`}
@@ -72,11 +73,10 @@ export const AboutMe: NextPage = () => {
               <div className={styles.tablet}>
                 <h3 className={styles.info_title} >Projects</h3>
                 {
-                  PROJECTS.map((itemProps, index) => {
+                  REACT_NATIVE_RESUME_DATA['PROJECTS'].map((itemProps, index) => {
                     return <InfoCard
                       {...itemProps}
-                      key={`${index}+pro`}
-
+                      key={`${index}+exp`}
                     />
                   })
                 }
@@ -98,16 +98,25 @@ export const AboutMe: NextPage = () => {
 
               <div className={styles.tablet + " " + styles.tablet_skills}>
                 <h3 className={styles.info_title} >Skills</h3>
-
                 {
-                  (Object.keys(LANGUAGE_SKILLS) as Array<keyof typeof LANGUAGE_SKILLS>).map((value, index) => {
-                    return (
-                      <ProgressBar
-                        key={index}
-                        head={value}
-                        value={LANGUAGE_SKILLS[value]}
-                      />
-                    )
+                  PROGRAMMING_SKILLS.map((item, index) => {
+                    return <div key={'dsadsa'} className={styles.skillsData}>
+                      <div className={styles.item_top}>
+                        <h5>{item.type}</h5>
+                      </div>
+                      <div className={styles.skillsItems}>
+                      {item?.items?.map(({ name, score }) => {
+                        return <div key={'dasd'}>
+                          <ProgressBar
+                            key={index}
+                            head={name}
+                            value={score}
+                            />
+                        </div>
+                      })}
+                      </div>
+
+                    </div>
                   })
                 }
 

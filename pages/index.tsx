@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     },
     {
       name: "Resume",
-      page: "/resume",
+      page: "docs/resume.pdf",
     },
     // {
     //   name: "Contact",
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
         <div className={styles.page}>
           <Intro />
           <AboutMe />
-          <Contact />
+          {/* <Contact /> */}
           <Footer />
         </div>
 
