@@ -48,7 +48,7 @@ export const PROGRAMMING_SKILLS: ResumePrograaming[] = [
   },
   {
     "type": "DBMS/Others",
-    "icon": "https://img.icons8.com/?size=100&id=8305&format=png&color=000000",
+    "icon": "https://img.icons8.com/?size=25&id=8305&format=png&color=000000",
     "items": [
       { "name": "MySQL", "score": 80 },
       { "name": "MongoDB", "score": 75 },
@@ -74,50 +74,50 @@ export const EDUCATION: ResumeSection[] = [
         type: RESUME_SUB_TEXT_TYPES.LOCATION,
         value: 'Kharagpur'
       },
-      {
-        type: RESUME_SUB_TEXT_TYPES.CGPA,
-        value: '7.66'
-      }
+      // {
+      //   type: RESUME_SUB_TEXT_TYPES.CGPA,
+      //   value: '7.66'
+      // }
     ],
-    position: "Dual Degree ( M.Tech + B.Tech ) Chemical Engineering.",
+    position: "Dual Degree ( M.Tech + B.Tech )",
   },
-  {
+  // {
 
-    head: "Arts, Commerce & Science College, Chandrapur",
-    subText: [
-      {
-        type: RESUME_SUB_TEXT_TYPES.DATE,
-        value: '2016-2018'
-      },
-      {
-        type: RESUME_SUB_TEXT_TYPES.LOCATION,
-        value: 'Maharashtra'
-      },
-      {
-        type: RESUME_SUB_TEXT_TYPES.PERCENT,
-        value: '89.95% '
-      }
-    ],
-    position: "Maharashtra HSC",
-  },
-  {
-    head: "Macaroon Students' Academy CBSE School, Wani",
-    subText: [
-      {
-        type: RESUME_SUB_TEXT_TYPES.DATE,
-        value: '2016'
-      },
-      {
-        type: RESUME_SUB_TEXT_TYPES.LOCATION,
-        value: 'Maharashtra '
-      },
-      {
-        type: RESUME_SUB_TEXT_TYPES.CGPA,
-        value: '  10    '
-      }
-    ],
-    position: "CBSE SSC",
-  }
+  //   head: "Arts, Commerce & Science College, Chandrapur",
+  //   subText: [
+  //     {
+  //       type: RESUME_SUB_TEXT_TYPES.DATE,
+  //       value: '2016-2018'
+  //     },
+  //     {
+  //       type: RESUME_SUB_TEXT_TYPES.LOCATION,
+  //       value: 'Maharashtra'
+  //     },
+  //     {
+  //       type: RESUME_SUB_TEXT_TYPES.PERCENT,
+  //       value: '89.95% '
+  //     }
+  //   ],
+  //   position: "Maharashtra HSC",
+  // },
+  // {
+  //   head: "Macaroon Students' Academy CBSE School, Wani",
+  //   subText: [
+  //     {
+  //       type: RESUME_SUB_TEXT_TYPES.DATE,
+  //       value: '2016'
+  //     },
+  //     {
+  //       type: RESUME_SUB_TEXT_TYPES.LOCATION,
+  //       value: 'Maharashtra '
+  //     },
+  //     {
+  //       type: RESUME_SUB_TEXT_TYPES.CGPA,
+  //       value: '  10    '
+  //     }
+  //   ],
+  //   position: "CBSE SSC",
+  // }
 ]
 
 export const EAA: ResumeSection[] = [

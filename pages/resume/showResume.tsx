@@ -112,7 +112,6 @@ const TechCard = (
 ) => {
   return (
     <div className={styles.techHead} key={index}>
-      <Image width="20" height="20" src={icon} alt={type} />
       <div className={styles.techLeft}>
         <div className={styles.techHeading}>{type} :
           <span className={styles.stacks}>
@@ -193,6 +192,15 @@ const Resume: NextPage<{ data: DATA }> = ({ data }) => {
                 alt="link: "
               />
               &nbsp;https://www.linkedin.com/in/chaitanyak17/
+            </span>
+            <span className={styles.topBar}>
+              <Image
+                width="11"
+                height="11"
+                src="https://img.icons8.com/?size=100&id=85799&format=png&color=000000&rotation=90"
+                alt="link: "
+              />
+              &nbsp;https://leetcode.com/u/chaitanyakhiratkar17/
             </span>
 
           </div>

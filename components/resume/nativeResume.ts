@@ -16,12 +16,13 @@ const EXPERIENCE: ResumeSection[] = [{
   ],
   position: "Full Stack Developer - Full Time",
   points: [
-    "Optimized cross-platform <strong>React Native apps, boosting user interaction by 30% </strong>through enhanced Android/iOS performance and streamlined features.",
+    "Optimized cross-platform <strong>React Native apps, boosting UI/UX by 30% </strong>through performance and streamlined features.",
     "Spearheaded the development of multiple critical component, streamlining integration across multiple modules<br> <strong>reducing integration time (75%)</strong> and <strong>enhanced performance (15%)</strong>, boosting team efficiency by <strong>30%</strong>",
     "Implemented centralized state management using <strong>Redux, Redux Toolkit</strong>, or <strong>MobX</strong> for scalable applications",
     "Collaborated with team to <strong>optimize performance (70%)</strong> and <strong>elevate code quality</strong>, implementing efficient practices",
     "Developed a <strong>gesture-controlled UI</strong> in React Native using Animated, enabling interactions similar to LinkedIn reactions.",
-    "Integrated <strong>Razorpay</strong> for secure payment processing and <strong>Firebase</strong> for authentication and real-time database integration"
+    "Integrated <strong>Razorpay</strong> for secure payment processing and <strong>Firebase</strong> for authentication and real-time database integration",
+    "Implemented <strong>Test-Driven Development</strong> in React Native, utilizing <strong>Jest</strong> for unit testing and <strong>Detox</strong> for end-to-end testing"
   ]
 },
 {
@@ -61,7 +62,7 @@ const EXPERIENCE: ResumeSection[] = [{
   points: [
     "Created an <strong>Android app</strong> for business-use with <strong>React Native & Koltin</strong> which is actively used in African Countries",
     "Integrated <strong>Android Native Modules</strong> to build POS features like card reader, bar-code scan, and receipt generation",
-    "<strong>Integrated and patched various APIs</strong> like payment, tracking, customer support, etc using AWS and implemented an <strong>Authentication system</strong> integrating Graph API and Google OAuth along with <strong>Express/MongoDB</strong>"
+    // "<strong>Integrated and patched various APIs</strong> like payment, tracking, customer support, etc using AWS and implemented an <strong>Authentication system</strong> integrating Graph API and Google OAuth along with <strong>Express/MongoDB</strong>"
   ]
 }
 ]
@@ -78,17 +79,33 @@ const PROJECTS: ResumeSection[] = [
     points: [
       "Built a Portfolio website using <strong>Next.js ( Typescript )</strong> and deployed it with AWS ",
       "Used <strong>Elastic Beanstalk</strong> to deploy it while provisioning load balancers, security groups, and VPC.",
-      "Constructed <strong>Serverless backend</strong> using AWS Lambda for CRUD operations in <strong>DynamoDB.</strong>"
+      "Constructed <strong>Serverless backend</strong> using AWS Lambda for CRUD operations in <strong>DynamoDB.</strong>",
+      // "Built JSON based Resume Builder to create my Resume"
     ]
-  }
+  },
+  {
+    subText: [
+      {
+        type: RESUME_SUB_TEXT_TYPES.LINK,
+        value: 'https://github.com/chaitanyak-iitkgp/myReceipts'
+      }
+    ],
+    position: "myReceipts",
+    points: [
+      "Developed an Android app using <strong>Kotlin</strong> and <strong>Jetpack Compose</strong> for business use, ensuring efficient user interface.",
+      "Utilized <strong>MVVM architecture</strong> to structure the app, promoting maintainability and scalability while ensuring a clean separation of concerns between UI and business logic.",
+      "Integrated Android Native Modules to implement critical POS features, including a <strong>Card reader</strong>, and <strong>Receipt generation</strong>, enhancing the app's functionality and usability for business transactions.",
+      "Worked with Jetpack Compose side effects and handled <strong>Coroutine scopes</strong>, optimizing app performance and ensuring smooth execution of asynchronous tasks.",
+    ]
+  },
 ]
 
 export const REACT_NATIVE_RESUME_DATA: {
   [key: string]: ResumePrograaming[] | ResumeSection[]
 } = {
   EDUCATION,
+  PROGRAMMING_SKILLS,
   EXPERIENCE,
   PROJECTS,
-  PROGRAMMING_SKILLS,
   'Extra Curricular Activities': EAA
 }
